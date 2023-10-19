@@ -1,0 +1,8 @@
+{
+    "pack": {
+        "description": "Overhauled Structures takes key elements of the game's naturally generated world and revises them to provide you with a fresh experience. Presenting dungeons, new villages, factions, items, and traps to discover so exploration never feels like a chore again.",
+        "pack_format": 9,
+        "forge:resource_pack_format": 9,
+        "forge:data_pack_format": 10
+    }
+}
