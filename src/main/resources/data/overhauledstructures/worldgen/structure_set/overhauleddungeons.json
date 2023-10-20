@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "overhauledstructures:overhauleddungeonbasic",
+      "weight": 1
+    },
+    {
+      "structure": "overhauledstructures:overhauleddungeonspiders",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 9844237244,
+    "spacing": 10,
+    "separation": 8,
+    "type": "minecraft:random_spread"
+  }
+}

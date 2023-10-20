@@ -4,42 +4,51 @@
 // Everything in this folder is the .nbt files required to make the structures within this mod function. They're organised in tidy file names with shorterners at the beginning of each name.
 // E.G: The Dungeon overhauls, are OvD at the start of each name. Such as OvDCenter. This represents the 'Centerpiece' of Overhauled Dungeons, which all of them stem from.
 // In the Dungeon's case, there are several alternate variants. Such as one generally aimed at skeletons, zombies and spiders, as well as ones specialised to each type. This means the shorterners need to be unique, but it was also important each type was grouped together, making it easy to tell what's what!
-// For this, instead of just OvDCenter, I went with OvDB_Core_1, OVDB_Core_2, etc, for a couple variants of the Overhauled Dungeon. The 'B' represents 'Basic'. If it were spiders only, expect OVDS_Core_1. This helps filtering my alphabetical order too.
+// For this, instead of just OvDCenter, I went with ovdb_core_1, ovdb_core_2, etc., for a couple variants of the Overhauled Dungeon. The 'B' represents 'Basic'. If it were spiders only, expect OVDS_core_1. This helps with filtering my alphabetical order too.
 // To keep things easy to follow beyond that, I also made sure each path connector between rooms, each room, and each varied function that fills space, was named in a basic, understandable form.
-// For an Overhauled Dungeon Basic Room with Parkour, the name would be OVDB_Room_Parkour_1 (and counts up, depending on how many variants). With a trap, OVDB_Room_Trap_1. Trap and parkour? OVDB_Room_Trapkour_1.
-// I wanted the special space fillers like loot chests, spawners, bosses and other special discoveries to be the first identified spots on the list. So a boss for this variant would be OVDB_Element_Boss_1. A chest? OVDB_Element_Chest_1. Waiting area? OVDB_Element_Waiting_Area_1.
-// Paths, connecting rooms, were a middleground. So I settled on names such as OVDB_Path_Straight_Trap_1, for a straight trapped path.
+// For an Overhauled Dungeon Basic room with parkour, the name would be ovdb_room_parkour_1 (and counts up, depending on how many variants). With a trap, ovdb_room_trap_1. Trap and parkour? ovdb_room_trapkour_1.
+// I wanted the special space fillers like loot chests, spawners, bosses and other special discoveries to be the first identified spots on the list. So a boss for this variant would be ovdb_element_boss_1. A chest? ovdb_element_chest_1. Spawner? ovdb_element_spawner_1.
+// Paths, connecting rooms, were a middle-ground. So I settled on names such as ovdb_path_straight_trap_1, for a straight trapped path.
 // While a lot of this seems complex, I kept the 'pools' simple. Prioritising variety over specifics. Allowing wide assortments of rooms.
-// One target pool here is overhauledstructures:overhauleddungeon/core. Another is overhauledstructures:overhauleddungeon/room.
-// To make rooms more varied, all rooms have a default version, as well as pieces which will change the appearance of what's within them by replacing part of it with a new 'Element'. These elements help increase perceived variety. Element pools are often more specific, to ensure it meshes well.
+// One target pool here is overhauledstructures:overhauleddungeonbasic/core. Another is overhauledstructures:overhauleddungeonbasic/room.
+// To make rooms more varied, all rooms have a default version, as well as pieces which will change the appearance of what's within them by replacing part of it with a new 'element'. These elements help increase perceived variety. element pools are often more specific, to ensure it meshes well.
 // This tends to mean we have modname:structurename/core, /room, /path, and a handful of different /element pools. In specific cases, special /rooms like "Floor 5", "Floor 6" and "Highest Floor" exist. Each to give a chance at a tall tower capping itself off with a finalising roof, guaranteed at the final floor.
 // Below is a list of the structures within the mod, their pools, and every individual piece with a brief one to five word note on its purpose.
 
 // Located: src/main/resources/data/overhauledstructures/tags/worldgen/template_pool
 // overhauledstructures:
-//  overhauleddungeon/
-//      core                            // (start of the structure, often tall with stairs or ladders rising and going down for large structures)
-//          OvDB_Core_1
-//          OvDB_Core_2
-//      feature                         // (every trap, treasure, danger)
-//          OvDB_
-//      feature_trap                    // (just traps)
-//          OvDB_
-//      feature_treasure                // (just treasure: chests, ores, etc)
-//          OvDB_
-//      feature_danger                  // (just mob spawners, minibosses (persistent), etc)
-//          OvDB_
-//      feature_boss                    // (just bosses, usually one or two persistent menaces per dungeon)
-//          OvDB_
-//      path                            // (every path, mainly simple straight paths, with a couple traps and parkours)
-//          OvDB_
-//      room                            // (every base room; parkours, treasuries, furnished, danger)
-//          OvDB_
-//      room_part_parkour               // (just variants for parkour rooms; trap parkour rooms, lava/water rooms with platforms, redstone parkour walls, etc)
-//          OvDB_Room_Trapkour_1
-//      room_part_treasury              // (just variants for treasury rooms, such as food storages, mineral storages, and boss room treasure chambers)
-//          OvDB_
-//      room_part_furnished             // (just variants for furnished rooms, such as dining halls, walkways, bedrooms, living quarters, throne rooms)
-//          OvDB_
-//      room_part_danger                // (just variants for danger rooms, such as coliseums, prisons, lava parkours, and boss rooms)
-//          OvDB_
+//  overhauleddungeonbasic/
+//      ovdb_core                            // (start of the structure, often tall with stairs or ladders rising and going down for large structures)
+//          ovdb_core_1
+//          ovdb_core_2
+//      ovdb_feature                         // (every trap, treasure, danger)
+//          ovdb_
+//      ovdb_feature_trap                    // (just traps)
+//          ovdb_
+//      ovdb_feature_treasure                // (just treasure: chests, ores, etc)
+//          ovdb_
+//      ovdb_feature_danger                  // (just mob spawners, minibosses (persistent), etc)
+//          ovdb_
+//      ovdb_feature_boss                    // (just bosses, usually one or two persistent menaces per dungeon)
+//          ovdb_
+//      ovdb_path                            // (every path, mainly simple straight paths, with a couple traps and parkours)
+//          ovdb_
+//      ovdb_room                            // (every base room; parkours, treasuries, furnished, danger)
+//          ovdb_room_1
+//          ovdb_room_2
+//          ovdb_room_3
+//          ovdb_room_4
+//      ovdb_room_part_parkour               // (just variants for parkour rooms; trap parkour rooms, lava/water rooms with platforms, redstone parkour walls, etc)
+//          ovdb_room_trapkour_1
+//      ovdb_room_part_treasury              // (just variants for treasury rooms, such as food storages, mineral storages, and boss room treasure chambers)
+//          ovdb_
+//      ovdb_room_part_furnished             // (just variants for furnished rooms, such as dining halls, walkways, bedrooms, living quarters, throne rooms)
+//          ovdb_
+//      ovdb_room_part_danger                // (just variants for danger rooms, such as coliseums, prisons, lava parkours, and boss rooms)
+//          ovdb_
+//      ovdb_room_wall                       // (walls, to block off dead ends tidily)
+//          ovdb_wall_1
+
+
+// Code Notes:
+// "step": "LAKES, LOCAL_MODIFICATIONS, RAW_GENERATION, STRONGHOLDS, SURFACE_STRUCTURES, TOP_LAYER_MODIFICATION, UNDERGROUND_DECORATION, UNDERGROUND_ORES, UNDERGROUND_STRUCTURES, VEGETAL_DECORATION"
