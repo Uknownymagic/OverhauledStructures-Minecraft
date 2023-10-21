@@ -1,6 +1,6 @@
 {
   "name": "overhauledstructures:overhauleddungeonbasic/ovdb_core",
-  "fallback": "minecraft:empty",
+  "fallback": "overhauledstructures:overhauleddungeonbasic/ovdb_wall",
   "elements": [
     {
       "weight": 5,
