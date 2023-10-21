@@ -1,0 +1,15 @@
+{
+  "name": "overhauledstructures:overhauleddungeonspiders/ovds_room_part_parkour",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "overhauledstructures:ovds_room_part_parkour_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
