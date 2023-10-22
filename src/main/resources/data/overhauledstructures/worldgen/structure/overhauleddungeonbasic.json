@@ -9,10 +9,10 @@
     "type": "minecraft:uniform",
 
     "max_inclusive": {
-      "absolute": -10
+      "absolute": -30
     },
     "min_inclusive": {
-      "absolute": -50
+      "absolute": -100
     }
   },
   "project_start_to_heightmap": "WORLD_SURFACE_WG",

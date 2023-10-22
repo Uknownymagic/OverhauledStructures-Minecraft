@@ -1,6 +1,6 @@
 {
   "name": "overhauledstructures:overhauleddungeonspiders/ovds_room",
-  "fallback": "minecraft:empty",
+  "fallback": "overhauledstructures:overhauleddungeonspiders/ovds_wall",
   "elements": [
     {
       "weight": 5,

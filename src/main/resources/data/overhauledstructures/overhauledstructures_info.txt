@@ -18,36 +18,183 @@
 // Located: src/main/resources/data/overhauledstructures/tags/worldgen/template_pool
 // overhauledstructures:
 //  overhauleddungeonbasic/
-//      ovdb_core                            // (start of the structure, often tall with stairs or ladders rising and going down for large structures)
-//          ovdb_core_1
-//          ovdb_core_2
-//      ovdb_feature                         // (every trap, treasure, danger)
+//      ovdb_core                           // Start of the structure, two floors, often tall with stairs or ladders rising and going down for large structures, l3 beneath
+//          ovdb_core_1                         // Entrance Hall (separate room parts for 1st/2nd floor & stairs)
+//      ovdb_core_l3                        // Beneath start, one floor, summons ovdb_core_l4 beneath
+//          ovdb_core_2                         // Casual Entrance Hall-like (one floor this time, uses 1st floor room parts of ovdb_core_1)
+//          ovdb_core_3                         // Library - Book/Feathers/Paper/Enchanted Book Loot/Lapis
+//          ovdb_core_4                         // Parkour
+//          ovdb_core_5                         // Prison - Skeletons/Zombies
+//          ovdb_core_6                         // Throne Room - Miniboss, Higher Tier Enchanted Weapon Loot/GApples/Health Potions/Food/Diamonds/XP Potions/Emeralds
+//      ovdb_core_l4                        // Beneath l3, one floor, ovdb_core_l5 beneath
+//          ovdb_core_l3 - modified             // (15% chance of boss room this floor)
+//      ovdb_core_l5                        // Beneath l4, one floor, ovdb_core_l6 beneath
+//          ovdb_core_l3 - modified             // (30% chance of boss room this floor)
+//      ovdb_core_l6                        // Beneath l5, one floor, ovdb_core_l7 beneath
+//          ovdb_core_l3 - modified             // (50% chance of boss room this floor)
+//      ovdb_core_l7                        // Beneath l6, one floor, ovdb_core_boss_room beneath
+//          ovdb_core_l3 - modified             // (70% chance of boss room this floor)
+//      ovdb_core_boss_room                 // Beneath l7, one floor
+//          ovdb_core_boss_room_1               // Special bedroom, fit for a king
+//          ovdb_core_boss_room_2               // Special coliseum, fit for a warrior
+//      ovdb_core_treasury
+//          ovdb_core_treasury_1
+//      ovdb_feature                        // Every treasure, danger
 //          ovdb_
-//      ovdb_feature_trap                    // (just traps)
+//          ovdb_feature_spawner_1              // feature_spawner
+//          ovdb_feature_spawner_2              // feature_spawner
+//          ovdb_feature_spawner_3              // feature_spawner
+//          ovdb_feature_miniboss_1             // feature_miniboss
+//          ovdb_feature_miniboss_2             // feature_miniboss
+//      ovdb_feature_treasure               // Just treasure: chests, ores, etc
 //          ovdb_
-//      ovdb_feature_treasure                // (just treasure: chests, ores, etc)
+//      ovdb_feature_danger                 // Just mob spawners, minibosses (persistent), etc
+//          ovdb_feature_spawner_1              // feature_spawner
+//          ovdb_feature_spawner_2              // feature_spawner
+//          ovdb_feature_spawner_3              // feature_spawner
+//          ovdb_feature_miniboss_1             // feature_miniboss
+//          ovdb_feature_miniboss_2             // feature_miniboss
+//      ovdb_feature_spawner                // Just mob spawners
+//          ovdb_feature_spawner_1              // Spider spawner, spiders are faster with jump boost, with a lot more of them spawning than other monsters - named Infestations
+//          ovdb_feature_spawner_2              // Skeleton spawner, skeletons are lightly leather armoured helm and boots, faster and have enchanted bows - named Fallen Archers
+//          ovdb_feature_spawner_3              // Zombie spawner, zombies are armed in full chainmail with iron swords and increased HP to 30/30, have slowness, but also have high chance to cause more zombies to spawn and strength - named Fallen Guards
+//      ovdb_feature_miniboss               // Just minibosses
+//          ovdb_feature_miniboss_1             // Persistent zombie, full diamond armour and sword, slowness, near full chance to cause more zombies to spawn on contact, 80/80 HP - named Fallen Royal Defender
+//          ovdb_feature_miniboss_2             // Persistent skeleton, enchanted diamond helm and boots, enchanted bow, 50/50 HP, speed - named Fallen Royal Hunter
+//      ovdb_feature_boss                   // Just bosses, usually one or two persistent menaces per dungeon
+//          ovdb_feature_boss_1                 // Powerful Illusioner with 80/80 HP and increased speed - named Court Mage Alvaste, spawns with three zombie minions wearing leather armour and stone swords - named Fallen Court Guards
+//          odvb_feature_boss_2                 // ^ Court Mage Pavile
+//          odvb_feature_boss_3                 // ^ Court Mage Mavis
+//          ovdb_feature_boss_4                 // Powerful Skeleton with 80/80 HP and increased speed, enchanted diamond helm and boots, enchanted bow - named King Laurence, spawns with two skeleton minions wearing leather helm/boots - named Fallen Court Archers
+//          ovdb_feature_boss_5                 // ^ Queen Jaureil
+//          ovdb_feature_boss_6                 // ^ Lord Sparr
+//      ovdb_path                           // Every path, mainly simple straight paths, with a couple traps and parkours
+//          ovdb_path_1                         // Parkour
+//          ovdb_path_2                         // Right-angle bend, right
+//          ovdb_path_3                         // Trapkour
+//          ovdb_path_4                         // Cave-in
+//          ovdb_path_5                         // Straight path
+//          ovdb_path_6                         // Path forwards, left, right and back
+//          ovdb_path_7                         // Right-angle bend, left
+//          ovdb_path_8                         // Path right and left, T junction (>10, short corridor)
+//          ovdb_path_9                         // Long straight path of corridors (>30, several off points left and right with a path at the end)
+//          ovdb_path_10                        // Very short straight path (<3)
+//          ovdb_path_11                        // Almost non-existent path (<2)
+//          ovdb_wall_1                         // Flat stone wall (here & in ovdb_wall)
+//          ovdb_wall_2                         // Caved in wall (here & in ovdb_wall)
+//      ovdb_room                           // (every base room; parkours (10%), treasure (5%), furnished (70%), danger(15%))
+//          ovdb_room_1                         // Pantry/Kitchen - Food Loot
+//          ovdb_room_2                         // Dining Hall
+//          ovdb_room_3                         // Library - Book/Feathers/Paper/Enchanted Book Loot/Lapis
+//          ovdb_room_4                         // Parkour
+//          ovdb_room_5                         // Display Room
+//          ovdb_room_6                         // Bedrooms
+//          ovdb_room_7                         // Guard Room - Feature: Skeletons/Zombies/Spiders/Miniboss/Loot
+//          ovdb_room_8                         // Prison - Spawner/Miniboss
+//          ovdb_room_9                         // Living Quarters
+//          ovdb_room_10                        // Armoury - Weapon/Chain Armour/Minerals
+//          ovdb_room_11                        // Internal Garden / Courtyard
+//          ovdb_room_12                        // Statue - Miniboss, Higher Tier Enchanted Weapon Loot/GApples/Health Potions/Food/Diamonds/XP Potions/Emeralds - uses garden pieces in four corners, statue piece in center
+//          ovdb_room_13                        // Prayer Hall, Magical - Skeletons, Bones/Low Enchanted Tools Loot/XP Potions/Lapis
+//          ovdb_room_14                        // Collapsed Room - Zombies, Rotten Flesh/Bones/Paper/Chain to Diamond Armour, damaged
+//          ovdb_room_15                        // Infested Dungeon - Spiders, Harmful Splash&Drink Potions/Chains/Iron Ingots/Cobwebs/String/Spider Eyes/Shears
+//      ovdb_room_part_parkour              // (just variants for parkour rooms; trap parkour rooms, lava/water rooms with platforms, redstone parkour walls, etc)
+//          ovdb_room_parkour_1                 // Trapkour, piston pushes off
+//          ovdb_room_parkour_2                 // Trapkour, impossible jump from caved in floor
+//          ovdb_room_parkour_3                 // Trapkour, blocked jump from caved in roof
+//          ovdb_room_parkour_4                 // Trapkour, pressure plate on several TNT blocks within collapsed rock/roof
+//          ovdb_room_parkour_5                 // Parkour, easy jumps on broken floor
+//          ovdb_room_parkour_6                 // Parkour, no jumps, no floor
+//          ovdb_room_parkour_7                 // Parkour, difficult, doable jumps on broken floor
+//          ovdb_room_parkour_8                 // Parkour, no jumps, wooden floor floor fully traversable, albeit messy
+//          ovdb_room_parkour_9                 // Parkour, has redstone pistons that can be expanded with levers to make possible jumps across wooden floor
+//          ovdb_room_parkour_10                // Parkour, can jump on furniture to get up higher and then get across a missing wooden floor gap
+//      ovdb_room_part_parkour_drop
+//          ovdb_room_parkour_drop_1            // Lava pit beneath it (special part for parkour rooms determines the floor)
+//          ovdb_room_parkour_drop_2            // Water pit
+//          ovdb_room_parkour_drop_3            // Stalagmite pit
+//          ovdb_room_parkour_drop_4            // Just a drop
+//          ovdb_room_parkour_drop_5            // Mixed
+//      ovdb_room_part_treasury             // Just variants for treasury rooms, such as food storages, mineral storages, and boss room treasure chambers
 //          ovdb_
-//      ovdb_feature_danger                  // (just mob spawners, minibosses (persistent), etc)
+//      ovdb_room_part_dining_hall          // Just variants for furnished rooms, such as dining halls, walkways, bedrooms, living quarters, throne rooms
 //          ovdb_
-//      ovdb_feature_boss                    // (just bosses, usually one or two persistent menaces per dungeon)
-//          ovdb_
-//      ovdb_path                            // (every path, mainly simple straight paths, with a couple traps and parkours)
-//          ovdb_
-//      ovdb_room                            // (every base room; parkours, treasuries, furnished, danger)
-//          ovdb_room_1
-//          ovdb_room_2
-//          ovdb_room_3
-//          ovdb_room_4
-//      ovdb_room_part_parkour               // (just variants for parkour rooms; trap parkour rooms, lava/water rooms with platforms, redstone parkour walls, etc)
-//          ovdb_room_trapkour_1
-//      ovdb_room_part_treasury              // (just variants for treasury rooms, such as food storages, mineral storages, and boss room treasure chambers)
-//          ovdb_
-//      ovdb_room_part_furnished             // (just variants for furnished rooms, such as dining halls, walkways, bedrooms, living quarters, throne rooms)
-//          ovdb_
-//      ovdb_room_part_danger                // (just variants for danger rooms, such as coliseums, prisons, lava parkours, and boss rooms)
-//          ovdb_
-//      ovdb_room_wall                       // (walls, to block off dead ends tidily)
-//          ovdb_wall_1
+//      ovdb_room_part_bedrooms             // Just variants for bedrooms
+//      ovdb_room_part_paths                // Just variants for connecting paths
+//      ovdb_room_part_throne_room          // Just variants for throne room core rooms
+//      ovdb_room_part_living_quarters      // Just variants for living quarters
+//          ovdb_room_part_living_quarters_1    // Piano
+//          ovdb_room_part_living_quarters_2    // Fireplace
+//          ovdb_room_part_living_quarters_3    // Cosy seating around a table
+//          ovdb_room_part_living_quarters_4    // Collapsed roof
+//          ovdb_room_part_living_quarters_5    // Bookshelves
+//          ovdb_room_part_living_quarters_6    // Other table
+//          ovdb_room_part_living_quarters_7    // Working redstone lamp
+//          ovdb_room_part_living_quarters_8    // Yet another table and a couch
+//          ovdb_room_part_living_quarters_9    // Bookshelves over a couple chairs
+//          ovdb_room_part_living_quarters_10   // Display cabinet/case and some barrels
+//      ovdb_room_part_stairway             // Just variants for stair parts in core rooms
+//          ovdb_room_part_stairway_1           // Stairway completely collapsed
+//          ovdb_room_part_stairway_2           // Stairway relatively intact, mostly okay
+//          ovdb_room_part_stairway_3           // Stairway blocked by overgrowth
+//          ovdb_room_part_stairway_4           // Stairway with a couple holes in it
+//          ovdb_room_part_stairway_5           // Stairway half broken, bottom half intact
+//          ovdb_room_part_stairway_6           // Stairway half broken, top half intact
+//          ovdb_room_part_stairway_8           // Stairway mostly intact, but overgrowth dangerously close on all sides, very overgrown
+//      ovdb_room_part_prison               // Just variants for prisons
+//      ovdb_room_part_dining_hall          // Just variants for dining halls
+//      ovdb_room_part_pantry               // Just variants for pantries / kitchens
+//      ovdb_room_part_library              // Just variants for libraries
+//      ovdb_room_part_guard_room           // Just variants for guard rooms
+//      ovdb_room_part_garden               // Just variants for internal gardens/courtyards
+//      ovdb_room_part_prayer_hall          // Just variants for prayer hall
+//      ovdb_room_part_collapsed_room       // Just variants for collapsed room
+//      ovdb_room_part_infested_dungeon     // Just variants for infested dungeon
+//      ovdb_room_part_armoury              // Just variants for armoury
+//      ovdb_room_part_statue               // Just variants for statue
+//          ovdb_room_part_statue_1             // Statue of a ruler, a human lord
+//          ovdb_room_part_statue_2             // Statue of a ruler, a dwarf lord
+//          ovdb_room_part_statue_3             // Statue of an angel
+//          ovdb_room_part_statue_4             // Broken, unrecognisable statue, quartz
+//          ovdb_room_part_statue_5             // Broken, unrecognisable statue with enormous amethyst crystals growing out from within the stand
+//      ovdb_room_part_entrance_hall_l1     // Just variants for entrance hall (core room only, 1st floor)
+//          ovdb_room_part_entrance_hall_l1_1   // Bookshelves around table, relatively hefty damage to surroundings
+//          ovdb_room_part_entrance_hall_l1_2   // Wall collapsed onto table and bookshelves
+//          ovdb_room_part_entrance_hall_l1_3   // Cosy place to sit
+//          ovdb_room_part_entrance_hall_l1_4   // Piano
+//          ovdb_room_part_entrance_hall_l1_5   // Table and chairs with a working redstone lamp
+//          ovdb_room_part_entrance_hall_l1_6   // Bookshelves and table, cosy
+//          ovdb_room_part_entrance_hall_l1_7   // Crystal overgrowth, section fallen, floor mostly missing
+//          ovdb_room_part_entrance_hall_l1_8   // Bookshelves and table, cosy
+//      ovdb_room_part_entrance_hall_l2     // Just variants for entrance hall (core room only, 2nd floor)
+//          ovdb_room_part_entrance_hall_l2_1   // Bookshelves around table, relatively hefty damage to surroundings
+//          ovdb_room_part_entrance_hall_l2_2   // Wall collapsed onto table and bookshelves
+//          ovdb_room_part_entrance_hall_l2_3   // Cosy place to sit
+//          ovdb_room_part_entrance_hall_l2_4   // Mini quartz statue
+//          ovdb_room_part_entrance_hall_l2_5   // Floor collapsed below, overgrowth overtaking
+//          ovdb_room_part_entrance_hall_l2_6   // Table and chairs, lots of flowers
+//          ovdb_room_part_entrance_hall_l2_7   // Thick cobwebs and wool, covered in overgrowth
+//          ovdb_room_part_entrance_hall_l2_8   // Chairs, a bunch of chairs
+//      ovdb_room_part_display_room         // Just variants for display room
+//          ovdb_room_part_display_room_1       // Ceiling collapse ruined display, glass on ground
+//          ovdb_room_part_display_room_2       // Obsidian block on display in a glass case, lamps on walls, overgrowth
+//          ovdb_room_part_display_room_3       // Skeleton head on display in a glass case, sign specifying it's the former ruler, floor broken around it
+//          ovdb_room_part_display_room_4       // Diamond block on display in a larger glass case, surrounded by iron bars
+//          ovdb_room_part_display_room_5       // Mini quartz statue
+//          ovdb_room_part_display_room_6       // Empty display case
+//          ovdb_room_part_display_room_7       // Cobwebs in a display case
+//          ovdb_room_part_display_room_8       // Entire part of the floor collapsed
+//          ovdb_room_part_display_room_9       // Table and chairs
+//          ovdb_room_part_display_room_10      // Bookshelves, with chairs
+//          ovdb_room_part_display_room_11      // Other mini quartz statue
+//          ovdb_room_part_display_room_12      // Gold block on display
+//          ovdb_room_part_display_room_13      // Nothing but overgrowth and some crystals on floor
+//          ovdb_room_part_display_room_14      // A couple chairs
+//          ovdb_room_part_display_room_15      // Some collapsed bookshelves and a fallen wall
+//          ovdb_room_part_display_room_16      // Another mini quartz statue
+//      ovdb_wall                           // Walls, to block off dead ends tidily
+//          ovdb_wall_1                         // Flat stone wall (here & in ovdb_path)
+//          ovdb_wall_2                         // Caved in wall (here & in ovdb_path)
 
 
 // Code Notes:
