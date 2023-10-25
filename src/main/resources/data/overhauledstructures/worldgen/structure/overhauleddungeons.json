@@ -1,9 +1,9 @@
 {
   "type": "minecraft:jigsaw",
-  "start_pool": "overhauledstructures:overhauleddungeonbasic/ovdb_core",
+  "start_pool": "overhauledstructures:overhauleddungeons/ovd_stone_core",
   "size": 7,
   "max_distance_from_center": 116,
-  "biomes": "#overhauledstructures:has_structure/overhauleddungeonbasic",
+  "biomes": "#overhauledstructures:has_structure/overhauleddungeons",
   "step": "underground_structures",
   "start_height": {
     "type": "minecraft:uniform",

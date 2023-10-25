@@ -19,6 +19,5 @@
   "use_expansion_hack": false,
   "spawn_overrides": {
 
-  },
-  "terrain_adaptation": "bury"
+  }
 }
