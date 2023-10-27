@@ -1,47 +1,56 @@
 {
-  "name": "overhauledstructures:overhauleddungeonbasic/ovdb_foliage",
+  "name": "overhauledstructures:overhauleddungeonbasic/ovdb_core_l5",
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 5,
+      "weight": 14,
       "element": {
-        "location": "overhauledstructures:ovdb_foliage_1",
+        "location": "overhauledstructures:ovdb_core_l5_2",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 5,
+      "weight": 14,
       "element": {
-        "location": "overhauledstructures:ovdb_foliage_2",
+        "location": "overhauledstructures:ovdb_core_l5_3",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 5,
+      "weight": 14,
       "element": {
-        "location": "overhauledstructures:ovdb_foliage_3",
+        "location": "overhauledstructures:ovdb_core_l5_4",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 5,
+      "weight": 14,
       "element": {
-        "location": "overhauledstructures:ovdb_foliage_5",
+        "location": "overhauledstructures:ovdb_core_l5_5",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 5,
+      "weight": 14,
       "element": {
-        "location": "overhauledstructures:ovdb_foliage_4",
+        "location": "overhauledstructures:ovdb_core_l5_6",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "location": "overhauledstructures:ovdb_core_boss_room",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

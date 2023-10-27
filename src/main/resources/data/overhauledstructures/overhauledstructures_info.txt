@@ -90,7 +90,7 @@
 //          ovdb_room_3                         // Library - Book/Feathers/Paper/Enchanted Book Loot/Lapis
 //          ovdb_room_4                         // Parkour
 //          ovdb_room_5                         // Display Room
-//          ovdb_room_6                         // Bedrooms
+//          ovdb_room_6                         // Bedrooms (2 on both sides)
 //          ovdb_room_7                         // Guard Room - Feature: Skeletons/Zombies/Spiders/Miniboss/Loot
 //          ovdb_room_8                         // Prison - Spawner/Miniboss
 //          ovdb_room_9                         // Living Quarters
@@ -100,6 +100,10 @@
 //          ovdb_room_13                        // Prayer Hall, Magical - Skeletons, Bones/Low Enchanted Tools Loot/XP Potions/Lapis
 //          ovdb_room_14                        // Collapsed Room - Zombies, Rotten Flesh/Bones/Paper/Chain to Diamond Armour, damaged
 //          ovdb_room_15                        // Infested Dungeon - Spiders, Harmful Splash&Drink Potions/Chains/Iron Ingots/Cobwebs/String/Spider Eyes/Shears
+//          ovdb_room_16                        // Bedrooms (1)
+//          ovdb_room_17                        // Bedrooms (1 on both sides)
+//          ovdb_room_18                        // Bedrooms (4 on both sides)
+//          ovdb_room_19                        // Bedrooms (4 on both sides, two floors, 2 per side per floor, uses spiral staircase randomiser (can repeat elsewhere))
 //      ovdb_room_part_parkour              // (just variants for parkour rooms; trap parkour rooms, lava/water rooms with platforms, redstone parkour walls, etc)
 //          ovdb_room_parkour_1                 // Trapkour, piston pushes off
 //          ovdb_room_parkour_2                 // Trapkour, impossible jump from caved in floor
@@ -122,6 +126,21 @@
 //      ovdb_room_part_dining_hall          // Just variants for dining halls
 //          ovdb_
 //      ovdb_room_part_bedrooms             // Just variants for bedrooms
+//          ovdb_room_part_bedrooms_1           // Bed, tables
+//          ovdb_room_part_bedrooms_2           // Bed, table, wardrobe
+//          ovdb_room_part_bedrooms_3           // Double bed, desk
+//          ovdb_room_part_bedrooms_4           // Bunk beds, both sides
+//          ovdb_room_part_bedrooms_5           // Bunk beds, desk, table
+//          ovdb_room_part_bedrooms_6           // Double bed, table
+//          ovdb_room_part_bedrooms_7           // Double bed, overgrown room
+//          ovdb_room_part_bedrooms_8           // Bunk beds, single bed, table
+//          ovdb_room_part_bedrooms_9           // Table, desk, no bed
+//          ovdb_room_part_bedrooms_10          // Working redstone bedside lamp, bed, table
+//          ovdb_room_part_bedrooms_11          // Bed, table, desk
+//          ovdb_room_part_bedrooms_12          // Bed, crystal overgrowth
+//          ovdb_room_part_bedrooms_13          // Bed, wardrobe, cobweb infestation
+//          ovdb_room_part_bedrooms_14          // Missing floor, overgrown room
+//          ovdb_room_part_bedrooms_15          // Missing floor, empty room
 //      ovdb_room_part_paths                // Just variants for connecting paths
 //          ovdb_room_part_paths_1              // Bench 1
 //          ovdb_room_part_paths_2              // Bookshelf
@@ -149,7 +168,7 @@
 //          ovdb_room_part_paths_24             // Bench 3
 //          ovdb_room_part_paths_25             // Broken floor 5
 //          ovdb_room_part_paths_26             // Missing floor 1
-//          ovdb_room_part_paths_27             // Missing floor 2
+//          ovdb_room_part_paths_27             // Leaves & seat
 //          ovdb_room_part_paths_28             // Carpet
 //          ovdb_room_part_paths_29             // Nothing
 //          ovdb_room_part_paths_30             // Armour Stand & Chainmail Armour (one)
@@ -183,6 +202,15 @@
 //          ovdb_room_part_stairwayr_6          // ^
 //          ovdb_room_part_stairwayr_7          // ^
 //          ovdb_room_part_stairwayr_8          // ^
+//      ovdb_room_part_stairway             // Just variants for stair parts in anywhere (3x3, shorter)
+//          ovdb_room_part_stairway_1           // Stairway completely collapsed
+//          ovdb_room_part_stairway_2           // Stairway relatively intact, mostly okay
+//          ovdb_room_part_stairway_3           // Stairway blocked by overgrowth
+//          ovdb_room_part_stairway_4           // Stairway with a couple holes in it
+//          ovdb_room_part_stairway_5           // Stairway half broken, bottom half intact
+//          ovdb_room_part_stairway_6           // Stairway half broken, top half intact
+//          ovdb_room_part_stairway_7           // Stairway with a lot of crystals on it
+//          ovdb_room_part_stairway_8           // Stairway mostly intact, but overgrowth dangerously close on all sides, very overgrown
 //      ovdb_room_part_prison               // Just variants for prisons
 //      ovdb_room_part_dining_hall          // Just variants for dining halls
 //      ovdb_room_part_pantry               // Just variants for pantries / kitchens

@@ -1,11 +1,11 @@
 {
-  "name": "overhauledstructures:overhauleddungeonbasic/ovdb_room",
-  "fallback": "overhauledstructures:overhauleddungeonbasic/ovdb_wall",
+  "name": "overhauledstructures:overhauleddungeonbasic/ovdb_room_part_bedrooms_part_bedrooms",
+  "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_1",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_1",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -14,7 +14,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_2",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_2",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -23,7 +23,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_3",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_3",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -32,7 +32,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_4",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_4",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -41,7 +41,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_5",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_5",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -50,7 +50,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_6",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_6",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -59,7 +59,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_7",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_7",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -68,7 +68,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_8",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_8",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -77,7 +77,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_9",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_9",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -86,7 +86,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_10",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_10",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -95,7 +95,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_11",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_11",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -104,7 +104,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_12",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_12",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -113,7 +113,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_13",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_13",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -122,7 +122,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_14",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_14",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -131,7 +131,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_15",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_15",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -140,7 +140,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_16",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_16",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -149,7 +149,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_17",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_17",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -158,7 +158,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_18",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_18",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -167,7 +167,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_19",
+        "location": "overhauledstructures:ovdb_room_part_bedrooms_19",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

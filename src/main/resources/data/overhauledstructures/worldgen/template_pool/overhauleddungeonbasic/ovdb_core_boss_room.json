@@ -1,11 +1,11 @@
 {
-  "name": "overhauledstructures:overhauleddungeonbasic/ovdb_core",
+  "name": "overhauledstructures:overhauleddungeonbasic/ovdb_core_boss_room",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_core_1",
+        "location": "overhauledstructures:ovdb_core_boss_room",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

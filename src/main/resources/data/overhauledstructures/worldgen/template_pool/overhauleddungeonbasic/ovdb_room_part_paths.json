@@ -1,6 +1,6 @@
 {
   "name": "overhauledstructures:overhauleddungeonbasic/ovdb_room_part_paths",
-  "fallback": "overhauledstructures:overhauleddungeonbasic/ovdb_wall",
+  "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 5,
