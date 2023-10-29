@@ -23,16 +23,14 @@
 //      ovdb_core_l3                        // Beneath start, one floor, summons ovdb_core_l4 beneath
 //          ovdb_core_2                         // Casual Entrance Hall-like (one floor this time, uses 1st floor room parts of ovdb_core_1)
 //          ovdb_core_3                         // Library - Book/Feathers/Paper/Enchanted Book Loot/Lapis
-//          ovdb_core_4                         // Parkour
+//          ovdb_core_4                         // Bedrooms
 //          ovdb_core_5                         // Prison - Skeletons/Zombies
 //          ovdb_core_6                         // Throne Room - Miniboss, Higher Tier Enchanted Weapon Loot/GApples/Health Potions/Food/Diamonds/XP Potions/Emeralds
 //      ovdb_core_l4                        // Beneath l3, one floor, ovdb_core_l5 beneath
 //          ovdb_core_l3 - modified             // (15% chance of boss room this floor)
 //      ovdb_core_l5                        // Beneath l4, one floor, ovdb_core_l6 beneath
-//          ovdb_core_l3 - modified             // (30% chance of boss room this floor)
-//      ovdb_core_l6                        // Beneath l5, one floor, ovdb_core_l7 beneath
-//          ovdb_core_l3 - modified             // (50% chance of boss room this floor)
-//      ovdb_core_l7                        // Beneath l6, one floor, ovdb_core_boss_room beneath
+//          ovdb_core_l3 - modified             // (45% chance of boss room this floor)
+//      ovdb_core_l6                        // Beneath l5, one floor, ovdb_core_boss_room beneath
 //          ovdb_core_l3 - modified             // (70% chance of boss room this floor)
 //      ovdb_core_boss_room                 // Beneath l7, one floor
 //          ovdb_core_boss_room_1               // Special bedroom, fit for a king
@@ -86,7 +84,7 @@
 //          ovdb_wall_2                         // Caved in wall (here & in ovdb_wall)
 //      ovdb_room                           // (every base room; parkours (10%), treasure (5%), furnished (70%), danger(15%))
 //          ovdb_room_1                         // Pantry/Kitchen - Food Loot
-//          ovdb_room_2                         // Dining Hall
+//          ovdb_room_2                         // Dining Hall (5 larger, 4 mini)
 //          ovdb_room_3                         // Library - Book/Feathers/Paper/Enchanted Book Loot/Lapis
 //          ovdb_room_4                         // Parkour
 //          ovdb_room_5                         // Display Room
@@ -104,6 +102,8 @@
 //          ovdb_room_17                        // Bedrooms (1 on both sides)
 //          ovdb_room_18                        // Bedrooms (4 on both sides)
 //          ovdb_room_19                        // Bedrooms (4 on both sides, two floors, 2 per side per floor, uses spiral staircase randomiser (can repeat elsewhere))
+//          ovdb_room_20                        // Dining Hall (4 larger, 20 mini)
+//          ovdb_room_21                        // Dining Hall (4 mini)
 //      ovdb_room_part_parkour              // (just variants for parkour rooms; trap parkour rooms, lava/water rooms with platforms, redstone parkour walls, etc)
 //          ovdb_room_parkour_1                 // Trapkour, piston pushes off
 //          ovdb_room_parkour_2                 // Trapkour, impossible jump from caved in floor
@@ -123,8 +123,6 @@
 //          ovdb_room_parkour_drop_5            // Crystals
 //      ovdb_room_part_treasury             // Just variants for treasury rooms, such as food storages, mineral storages, and boss room treasure chambers
 //          ovdb_
-//      ovdb_room_part_dining_hall          // Just variants for dining halls
-//          ovdb_
 //      ovdb_room_part_bedrooms             // Just variants for bedrooms
 //          ovdb_room_part_bedrooms_1           // Bed, tables
 //          ovdb_room_part_bedrooms_2           // Bed, table, wardrobe
@@ -141,6 +139,24 @@
 //          ovdb_room_part_bedrooms_13          // Bed, wardrobe, cobweb infestation
 //          ovdb_room_part_bedrooms_14          // Missing floor, overgrown room
 //          ovdb_room_part_bedrooms_15          // Missing floor, empty room
+//      ovdb_room_part_bedroomsl            // Just variants for bedroom parts in core rooms (all core rooms) (left half)
+//          ovdb_room_part_bedroomsl_1          // Two intact bedrooms
+//          ovdb_room_part_bedroomsl_2          // Two damaged bedrooms
+//          ovdb_room_part_bedroomsl_3          // One intact bedroom, left
+//          ovdb_room_part_bedroomsl_4          // One intact bedroom, right
+//          ovdb_room_part_bedroomsl_5          // Two bedrooms with no walls
+//          ovdb_room_part_bedroomsl_6          // One bedroom with no wall
+//          ovdb_room_part_bedroomsl_7          // Three bedrooms with no walls
+//          ovdb_room_part_bedroomsl_8          // Collapsed floor
+//      ovdb_room_part_bedroomsr            // Just variants for bedroom parts in core rooms (all core rooms) (right half)
+//          ovdb_room_part_bedroomsr_1          // ^
+//          ovdb_room_part_bedroomsr_2          // ^
+//          ovdb_room_part_bedroomsr_3          // ^
+//          ovdb_room_part_bedroomsr_4          // ^
+//          ovdb_room_part_bedroomsr_5          // ^
+//          ovdb_room_part_bedroomsr_6          // ^
+//          ovdb_room_part_bedroomsr_7          // ^
+//          ovdb_room_part_bedroomsr_8          // ^
 //      ovdb_room_part_paths                // Just variants for connecting paths
 //          ovdb_room_part_paths_1              // Bench 1
 //          ovdb_room_part_paths_2              // Bookshelf
@@ -212,9 +228,66 @@
 //          ovdb_room_part_stairway_7           // Stairway with a lot of crystals on it
 //          ovdb_room_part_stairway_8           // Stairway mostly intact, but overgrowth dangerously close on all sides, very overgrown
 //      ovdb_room_part_prison               // Just variants for prisons
-//      ovdb_room_part_dining_hall          // Just variants for dining halls
+//      ovdb_room_part_prisonl              // Just variants for prisons (core, left)
+//          ovdb_room_part_prisonl_1            // One large medium height cell
+//          ovdb_room_part_prisonl_2            // Two floored cell block
+//          ovdb_room_part_prisonl_3            // One floor cell block with seating area on top
+//          ovdb_room_part_prisonl_4            // Two floored cell block completely consumed by amethyst crystals
+//          ovdb_room_part_prisonl_5            // One large medium height cell, broken, badly
+//          ovdb_room_part_prisonl_6            // One large room height cell
+//          ovdb_room_part_prisonl_7            // Two floored large medium height cells
+//          ovdb_room_part_prisonl_8            // One floor cell block with seating area beneath
+//      ovdb_room_part_prisonr              // Just variants for prisons (core, right)
+//          ovdb_room_part_prisonr_1            // ^
+//          ovdb_room_part_prisonr_2            // ^
+//          ovdb_room_part_prisonr_3            // ^
+//          ovdb_room_part_prisonr_4            // ^
+//          ovdb_room_part_prisonr_5            // ^
+//          ovdb_room_part_prisonr_6            // ^
+//          ovdb_room_part_prisonr_7            // ^
+//          ovdb_room_part_prisonr_8            // ^
+//      ovdb_room_part_dining_hall          // Just variants for dining halls larger pieces
+//          ovdb_room_part_dining_hall_1        // 4 mini tables
+//          ovdb_room_part_dining_hall_2        // 2 mini tables and 1 mini table with 4 chairs
+//          ovdb_room_part_dining_hall_3        // 3 mini tables
+//          ovdb_room_part_dining_hall_4        // 1 larger table, 4 chairs
+//          ovdb_room_part_dining_hall_5        // 1 larger table, 8 chairs
+//          ovdb_room_part_dining_hall_6        // Flowers and leaves, basic seats
+//          ovdb_room_part_dining_hall_7        // Bookshelves and mini table with 4 chairs
+//          ovdb_room_part_dining_hall_8        // 3 mini tables
+//          ovdb_room_part_dining_hall_9        // 2 mini tables with 2 chairs, and 1 chair
+//          ovdb_room_part_dining_hall_10       // 1 big wide table with 3 chairs
+//      ovdb_room_part_dining_hall_m        // Just variants for dining halls mini pieces
+//          ovdb_room_part_dining_hall_m_1      // 1 mini table
+//          ovdb_room_part_dining_hall_m_2      // 1 mini table with 4 chairs
+//          ovdb_room_part_dining_hall_m_3      // 2 mini tables
+//          ovdb_room_part_dining_hall_m_4      // 1 wide table with 4 chairs
+//          ovdb_room_part_dining_hall_m_5      // 1 mini table
+//          ovdb_room_part_dining_hall_m_6      // 2 mini tables
+//          ovdb_room_part_dining_hall_m_7      // 1 mini table and 1 chair
+//          ovdb_room_part_dining_hall_m_8      // 4 chairs
+//          ovdb_room_part_dining_hall_m_9      // Broken floor
+//          ovdb_room_part_dining_hall_m_10     // Bookshelves, 1 mini table and 1 chair
 //      ovdb_room_part_pantry               // Just variants for pantries / kitchens
 //      ovdb_room_part_library              // Just variants for libraries
+//      ovdb_room_part_libraryl             // Just variants for core libraries (left side)
+//          ovdb_room_part_libraryl_1           // Tall bookshelves, some seating area, tidy plants, minimal overgrowth
+//          ovdb_room_part_libraryl_2           // Working redstone lamp, bookshelves overhead, cosy enclosed spaces to read at, minimal damage
+//          ovdb_room_part_libraryl_3           // Very damaged, fallen bookshelf, non-functional lamp
+//          ovdb_room_part_libraryl_4           // Very overgrown, lots of bookshelves
+//          ovdb_room_part_libraryl_5           // Several places to sit on a bigger table with a lot of tall bookshelves
+//          ovdb_room_part_libraryl_6           // Very damaged floor with missing parts, but very dense bookshelves around and overhead
+//          ovdb_room_part_libraryl_7           // Extra cobwebs overhead with white wool in a lot of bookshelves
+//          ovdb_room_part_libraryl_8           // Amethyst crystal overgrowth in a bookshelf, otherwise very densely packed with bookshelves
+//      ovdb_room_part_libraryr             // Just variants for core libraries (right side)
+//          ovdb_room_part_libraryr_1           // Tall bookshelves, some seating area, tidy plants, minimal overgrowth
+//          ovdb_room_part_libraryr_2           // Working redstone lamp, bookshelves overhead, cosy enclosed spaces to read at, minimal damage
+//          ovdb_room_part_libraryr_3           // Very damaged, fallen bookshelf, non-functional lamp
+//          ovdb_room_part_libraryr_4           // Very overgrown, lots of bookshelves
+//          ovdb_room_part_libraryr_5           // Several places to sit on a bigger table with a lot of tall bookshelves
+//          ovdb_room_part_libraryr_6           // Very damaged floor with missing parts, but very dense bookshelves around and overhead
+//          ovdb_room_part_libraryr_7           // Extra cobwebs overhead with white wool in a lot of bookshelves
+//          ovdb_room_part_libraryr_8           // Amethyst crystal overgrowth in a bookshelf, otherwise very densely packed with bookshelves
 //      ovdb_room_part_guard_room           // Just variants for guard rooms
 //      ovdb_room_part_garden               // Just variants for internal gardens/courtyards
 //      ovdb_room_part_prayer_hall          // Just variants for prayer hall
