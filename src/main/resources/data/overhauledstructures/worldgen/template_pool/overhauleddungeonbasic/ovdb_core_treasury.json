@@ -1,0 +1,24 @@
+{
+  "name": "overhauledstructures:overhauleddungeonbasic/ovdb_core_treasury",
+  "fallback": "overhauledstructures:overhauleddungeonbasic/ovdb_wall",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "overhauledstructures:ovdb_core_treasury_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "overhauledstructures:ovdb_core_treasury_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "_comment": "This is a comment! Either specify the exact biome ID, or use # at the start to specify multiple?",
-  "values": [
-    "#minecraft:is_overworld"
-  ]
-}

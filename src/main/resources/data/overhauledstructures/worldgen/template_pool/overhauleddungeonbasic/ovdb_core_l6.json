@@ -46,15 +46,6 @@
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
-    },
-    {
-      "weight": 70,
-      "element": {
-        "location": "overhauledstructures:ovdb_core_boss_room",
-        "processors": "minecraft:empty",
-        "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
-      }
     }
   ]
 }
