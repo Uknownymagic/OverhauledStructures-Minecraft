@@ -2,11 +2,11 @@
   "structures": [
     {
       "structure": "overhauledstructures:overhauleddungeonbasic",
-      "weight": 10
+      "weight": 1
     },
     {
       "structure": "overhauledstructures:overhauleddungeonspiders",
-      "weight": 1
+      "weight": 10
     }
   ],
   "placement": {

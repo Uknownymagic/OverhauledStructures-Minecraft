@@ -1,0 +1,573 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:cobweb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:amethyst_cluster",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:pumpkin_seeds",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:melon_seeds",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:wheat_seeds",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:amethyst_block"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:amethyst_cluster",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:amethyst_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 24
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:budding_amethyst",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 0,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:amethyst_block",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:amethyst_cluster",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:amethyst_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 6
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:budding_amethyst",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 0,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:beetroot_seeds",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 32
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:baked_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:chorus_fruit",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:bread",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:carrot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:rotten_flesh",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:apple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:iron_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:diamond_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:golden_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:golden_carrot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 9
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:enchanted_golden_apple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 16
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:amethyst_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 24
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"I\\'m sorry.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"I don\\'t think I\\'m ready for this.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Tell the others to call off the wedding.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Something came up.\",\"italic\":false,\"color\":\"white\"}]']}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"I\\'ve heard strange things lately.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Some guards have been given special duties.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"They can\\'t tell the rest of us why.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"I promise I\\'ll be careful.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"I\\'ll let you know what\\'s happening.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"See you soon.\",\"italic\":false,\"color\":\"white\"}]']}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"Our crop growth is improving.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"The mages developed, a...\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Fertiliser.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"I believe that\\'s what they called it.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"No-one will go hungry this year.\",\"italic\":false,\"color\":\"white\"}]']}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"Remember, this money is for food.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Visit the bakery.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Get something nice.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Our children need a break.\",\"italic\":false,\"color\":\"white\"}]']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

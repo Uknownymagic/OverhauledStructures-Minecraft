@@ -5,7 +5,7 @@
     {
       "weight": 11,
       "element": {
-        "location": "overhauledstructures:ovdb_core_l5_2",
+        "location": "overhauledstructures:ovdb/ovdb_core_l5_2",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -14,7 +14,7 @@
     {
       "weight": 11,
       "element": {
-        "location": "overhauledstructures:ovdb_core_l5_3",
+        "location": "overhauledstructures:ovdb/ovdb_core_l5_3",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -23,7 +23,7 @@
     {
       "weight": 11,
       "element": {
-        "location": "overhauledstructures:ovdb_core_l5_4",
+        "location": "overhauledstructures:ovdb/ovdb_core_l5_4",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -32,7 +32,7 @@
     {
       "weight": 11,
       "element": {
-        "location": "overhauledstructures:ovdb_core_l5_5",
+        "location": "overhauledstructures:ovdb/ovdb_core_l5_5",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -41,7 +41,7 @@
     {
       "weight": 11,
       "element": {
-        "location": "overhauledstructures:ovdb_core_l5_6",
+        "location": "overhauledstructures:ovdb/ovdb_core_l5_6",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -50,7 +50,7 @@
     {
       "weight": 9,
       "element": {
-        "location": "overhauledstructures:ovdb_core_l6_2",
+        "location": "overhauledstructures:ovdb/ovdb_core_l6_2",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -59,7 +59,7 @@
     {
       "weight": 9,
       "element": {
-        "location": "overhauledstructures:ovdb_core_l6_3",
+        "location": "overhauledstructures:ovdb/ovdb_core_l6_3",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -68,7 +68,7 @@
     {
       "weight": 9,
       "element": {
-        "location": "overhauledstructures:ovdb_core_l6_4",
+        "location": "overhauledstructures:ovdb/ovdb_core_l6_4",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -77,7 +77,7 @@
     {
       "weight": 9,
       "element": {
-        "location": "overhauledstructures:ovdb_core_l6_5",
+        "location": "overhauledstructures:ovdb/ovdb_core_l6_5",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -86,7 +86,7 @@
     {
       "weight": 9,
       "element": {
-        "location": "overhauledstructures:ovdb_core_l6_6",
+        "location": "overhauledstructures:ovdb/ovdb_core_l6_6",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

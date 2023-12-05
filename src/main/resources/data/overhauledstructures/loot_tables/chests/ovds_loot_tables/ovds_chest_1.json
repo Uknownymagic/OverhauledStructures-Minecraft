@@ -29,6 +29,23 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"I am excited to see you again.\",\"italic\":true,\"color\":\"white\"}]','[{\"text\":\"The castle has us protecting something.\",\"italic\":true,\"color\":\"white\"}]','[{\"text\":\"I\\'ll be back soon.\",\"italic\":true,\"color\":\"white\"}]','[{\"text\":\"I miss you.\",\"italic\":true,\"color\":\"white\"}]']}}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.9
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:string",
           "functions": [
             {

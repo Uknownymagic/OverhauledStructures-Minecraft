@@ -5,7 +5,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_part_parkour_1",
+        "location": "overhauledstructures:ovdb/ovdb_room_part_parkour_1",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -14,7 +14,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_part_parkour_2",
+        "location": "overhauledstructures:ovdb/ovdb_room_part_parkour_2",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -23,7 +23,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_part_parkour_3",
+        "location": "overhauledstructures:ovdb/ovdb_room_part_parkour_3",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -32,7 +32,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_part_parkour_4",
+        "location": "overhauledstructures:ovdb/ovdb_room_part_parkour_4",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -41,7 +41,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_part_parkour_5",
+        "location": "overhauledstructures:ovdb/ovdb_room_part_parkour_5",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -50,7 +50,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_part_parkour_6",
+        "location": "overhauledstructures:ovdb/ovdb_room_part_parkour_6",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -59,7 +59,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_part_parkour_7",
+        "location": "overhauledstructures:ovdb/ovdb_room_part_parkour_7",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -68,7 +68,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_part_parkour_8",
+        "location": "overhauledstructures:ovdb/ovdb_room_part_parkour_8",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -77,7 +77,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_part_parkour_9",
+        "location": "overhauledstructures:ovdb/ovdb_room_part_parkour_9",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -86,7 +86,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb_room_part_parkour_10",
+        "location": "overhauledstructures:ovdb/ovdb_room_part_parkour_10",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

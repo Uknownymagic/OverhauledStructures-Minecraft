@@ -1,0 +1,33 @@
+{
+  "name": "overhauledstructures:overhauleddungeonspiders/ovds_feature_chests",
+  "fallback": "overhauledstructures:overhauleddungeonspiders/ovds_feature_chests",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "overhauledstructures:ovds/ovds_feature_chests_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "overhauledstructures:ovds/ovds_feature_chests_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "overhauledstructures:ovds/ovds_feature_chests_3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

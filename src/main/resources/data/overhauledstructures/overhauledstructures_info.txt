@@ -20,6 +20,9 @@
 //  overhauleddungeonbasic/
 //      ovdb_core                           // Start of the structure, two floors, often tall with stairs or ladders rising and going down for large structures, l3 beneath
 //          ovdb_core_1                         // Entrance Hall (separate room parts for 1st/2nd floor & stairs)
+//      ovdb_core_boss_room                 // Beneath l7, one floor
+//          ovdb_core_boss_room_1               // Special bedroom, fit for a king
+//          ovdb_core_boss_room_2               // Special coliseum, fit for a warrior
 //      ovdb_core_l3                        // Beneath start, one floor, summons ovdb_core_l4 beneath
 //          ovdb_core_2                         // Casual Entrance Hall-like (one floor this time, uses 1st floor room parts of ovdb_core_1)
 //          ovdb_core_3                         // Library - Book/Feathers/Paper/Enchanted Book Loot/Lapis
@@ -31,46 +34,39 @@
 //      ovdb_core_l5                        // Beneath l4, one floor, ovdb_core_l6 beneath
 //          ovdb_core_l3 - modified             // (45% chance of boss room this floor)
 //      ovdb_core_l6                        // Beneath l5, one floor, ovdb_core_boss_room beneath
-//          ovdb_core_l3 - modified             // (70% chance of boss room this floor)
-//      ovdb_core_boss_room                 // Beneath l7, one floor
-//          ovdb_core_boss_room_1               // Special bedroom, fit for a king
-//          ovdb_core_boss_room_2               // Special coliseum, fit for a warrior
+//          ovdb_core_l3 - modified             // (100% chance of boss room this floor)
+//      ovdb_core_treasury                  // Just two variants for the treasury which can spawn
+//          ovdb_core_treasury_1                // Tidy safe-like storage warehouse, bedrock encased besides boss room entrance, 8 spots for treasury loot
+//          ovdb_core_treasury_2                // Overgrown, lots of flags, poorly kept storage warehouse, bedrock encased, 8 spots for treasury loot
 //      ovdb_feature                        // Every treasure, danger
-//          ovdb_feature_treasure_1             // feature_treasure
-//          ovdb_feature_treasure_2             // feature_treasure
-//          ovdb_feature_treasure_3             // feature_treasure
-//          ovdb_feature_spawner_1              // feature_spawner
-//          ovdb_feature_spawner_2              // feature_spawner
-//          ovdb_feature_spawner_3              // feature_spawner
-//          ovdb_feature_miniboss_1             // feature_miniboss
-//          ovdb_feature_miniboss_2             // feature_miniboss
-//          ovdb_feature_miniboss_3             // feature_miniboss
-//      ovdb_feature_treasure               // Just treasure: chests, ores, etc
-//          ovdb_feature_treasure_1             // Randomised loot with stone and iron weapons, ingots, nuggets and very rarely full mineral blocks
-//          ovdb_feature_treasure_2             // Randomised loot with foods, seeds, golden apples and very rarely god apples
-//          ovdb_feature_treasure_3             // Randomised loot with chainmail and iron armour, ingots, nuggets and very rarely potions of regeneration
-//      ovdb_feature_danger                 // Just mob spawners, minibosses (persistent), etc
-//          ovdb_feature_spawner_1              // feature_spawner
-//          ovdb_feature_spawner_2              // feature_spawner
-//          ovdb_feature_spawner_3              // feature_spawner
-//          ovdb_feature_miniboss_1             // feature_miniboss
-//          ovdb_feature_miniboss_2             // feature_miniboss
-//          ovdb_feature_miniboss_3             // feature_miniboss
-//      ovdb_feature_spawner                // Just mob spawners
-//          ovdb_feature_spawner_1              // Spider spawner, spiders are faster with jump boost, with a lot more of them spawning than other monsters - named Infestations
-//          ovdb_feature_spawner_2              // Skeleton spawner, skeletons are lightly leather armoured helm and boots, faster and have enchanted bows - named Fallen Archers
-//          ovdb_feature_spawner_3              // Zombie spawner, zombies are armed in full chainmail with iron swords and increased HP to 30/30, have slowness, but also have high chance to cause more zombies to spawn and strength - named Fallen Guards
+//          ovdb_feature_11                     // feature_treasure
+//          ovdb_feature_12                     // feature_treasure
+//          ovdb_feature_3                      // feature_treasure
+//          ovdb_feature_4                      // feature_spawner
+//          ovdb_feature_5                      // feature_spawner
+//          ovdb_feature_6                      // feature_spawner
+//          ovdb_feature_7                      // feature_miniboss
+//          ovdb_feature_8                      // feature_miniboss
+//          ovdb_feature_9                      // feature_miniboss
+//      ovdb_feature_boss                   // Just bosses, usually one or two persistent menaces per dungeon
+//          ovdb_feature_boss_1                 // Powerful Illusioner with 80/80 HP and increased speed - named Court Mage Alvaste, spawns with three zombie minions wearing leather armour and stone swords - named Fallen Court Guards
+//          ovdb_feature_boss_2                 // ^ Court Mage Pavile
+//          ovdb_feature_boss_3                 // ^ Court Mage Mavis
+//          ovdb_feature_boss_4                 // Powerful Skeleton with 80/80 HP and increased speed, enchanted diamond helm and boots, enchanted bow - named King Laurence, spawns with two skeleton minions wearing leather helm/boots - named Fallen Court Archers
+//          ovdb_feature_boss_5                 // ^ Queen Jaureil
+//          ovdb_feature_boss_6                 // ^ Lord Sparr
 //      ovdb_feature_miniboss               // Just minibosses
 //          ovdb_feature_miniboss_1             // Persistent zombie, full diamond armour and sword, slowness, near full chance to cause more zombies to spawn on contact, 80/80 HP - named Fallen Royal Defender
 //          ovdb_feature_miniboss_2             // Persistent skeleton, enchanted diamond helm and boots, enchanted bow, 50/50 HP, speed - named Fallen Royal Hunter
 //          ovdb_feature_miniboss_3             // Persistent spider (80/80 HP, speed, jump boost, heightened strength), spawns with multiple other spiders (20/20 HP, speed, jump boost) - named The Arachnid Queen and Mother's Guards
-//      ovdb_feature_boss                   // Just bosses, usually one or two persistent menaces per dungeon
-//          ovdb_feature_boss_1                 // Powerful Illusioner with 80/80 HP and increased speed - named Court Mage Alvaste, spawns with three zombie minions wearing leather armour and stone swords - named Fallen Court Guards
-//          odvb_feature_boss_2                 // ^ Court Mage Pavile
-//          odvb_feature_boss_3                 // ^ Court Mage Mavis
-//          ovdb_feature_boss_4                 // Powerful Skeleton with 80/80 HP and increased speed, enchanted diamond helm and boots, enchanted bow - named King Laurence, spawns with two skeleton minions wearing leather helm/boots - named Fallen Court Archers
-//          ovdb_feature_boss_5                 // ^ Queen Jaureil
-//          ovdb_feature_boss_6                 // ^ Lord Sparr
+//      ovdb_feature_spawner                // Just mob spawners
+//          ovdb_feature_spawner_1              // Spider spawner, spiders are faster with jump boost, with a lot more of them spawning than other monsters - named Infestations
+//          ovdb_feature_spawner_2              // Skeleton spawner, skeletons are lightly leather armoured helm and boots, faster and have enchanted bows - named Fallen Archers
+//          ovdb_feature_spawner_3              // Zombie spawner, zombies are armed in full chainmail with iron swords and increased HP to 30/30, have slowness, but also have high chance to cause more zombies to spawn and strength - named Fallen Guards
+//      ovdb_feature_treasure               // Just treasure: chests, ores, etc
+//          ovdb_feature_treasure_1             // Randomised loot with stone and iron weapons, ingots, nuggets and very rarely full mineral blocks
+//          ovdb_feature_treasure_2             // Randomised loot with foods, seeds, golden apples and very rarely god apples
+//          ovdb_feature_treasure_3             // Randomised loot with chainmail and iron armour, ingots, nuggets and very rarely potions of regeneration
 //      ovdb_path                           // Every path, mainly simple straight paths, with a couple traps and parkours
 //          ovdb_path_1                         // Parkour
 //          ovdb_path_2                         // Right-angle bend, right
@@ -116,61 +112,44 @@
 //          ovdb_room_28                        // Two Floor Big Library & Partitioned Rooms
 //          ovdb_room_29                        // Long Prison - Spawner/Miniboss
 //          ovdb_room_30                        // Large Prison, Two Floors - Spawner/Miniboss
-//      ovdb_room_part_coliseum             // Variants for core boss room corners, coliseum
-//          ovdb_room_part_coliseum_1           // Very broken floor, lots of cobwebs, pillar upholding ceiling
-//          ovdb_room_part_coliseum_2           // Tidy, clear, pillar upholding ceiling
-//          ovdb_room_part_coliseum_3           // Rocks, pillar upholding ceiling
-//          ovdb_room_part_coliseum_4           // Very, very overgrown, pillar upholding ceiling
-//          ovdb_room_part_coliseum_5           // Crystal overgrowth, consuming pillar upholding ceiling
-//          ovdb_room_part_coliseum_6           // Rocks, crystal overgrowth, consuming pillar upholding ceiling
-//          ovdb_room_part_coliseum_7           // Crystal overgrowth up above consuming pillar, lots of cobwebs below, broken floor, fallen broken pillar
-//          ovdb_room_part_coliseum_8           // Overgrown, pillar collapsed
-//      ovdb_room_part_sbedroom             // Variants for core boss room corners, royal bedroom; note these will result in multiple beds, intentionally - it's royal
-//          ovdb_room_part_sbedroom_1           // Triple bed, fully regal with an overhang and flowers at both sides, albeit broken floor
-//          ovdb_room_part_sbedroom_2           // The same, but overgrown with more seats around it instead of broken floor
-//          ovdb_room_part_sbedroom_3           // A bunch of seating arrangements, particularly a couch-like one
-//          ovdb_room_part_sbedroom_4           // A lot of flowers, bookshelves, single bed with its own royal flair
-//          ovdb_room_part_sbedroom_5           // More bookshelves, double bed with royal flair
-//          ovdb_room_part_sbedroom_6           // A bunch of bookshelves around seating arrangements
-//          ovdb_room_part_sbedroom_7           // Somewhat open part of floor with a simple bed, just a couple flowers
-//          ovdb_room_part_sbedroom_8           // Double bed, regal, wardrobe too, otherwise very open floor
-//      ovdb_room_part_parkour              // Just variants for parkour rooms; trap parkour rooms, lava/water rooms with platforms, redstone parkour walls, etc
-//          ovdb_room_parkour_1                 // Trapkour, piston pushes off
-//          ovdb_room_parkour_2                 // Trapkour, impossible jump from caved in floor
-//          ovdb_room_parkour_3                 // Trapkour, blocked jump from caved in roof
-//          ovdb_room_parkour_4                 // Trapkour, pressure plate on several TNT blocks within collapsed rock/roof
-//          ovdb_room_parkour_5                 // Parkour, easy jumps on broken floor
-//          ovdb_room_parkour_6                 // Parkour, no jumps, no floor
-//          ovdb_room_parkour_7                 // Parkour, difficult, doable jumps on broken floor
-//          ovdb_room_parkour_8                 // Parkour, no jumps, wooden floor floor fully traversable, albeit messy
-//          ovdb_room_parkour_9                 // Parkour, has redstone pistons that can be expanded with levers to make possible jumps across wooden floor
-//          ovdb_room_parkour_10                // Parkour, can jump on furniture to get up higher and then get across a missing wooden floor gap
-//      ovdb_room_part_parkour_drop
-//          ovdb_room_parkour_drop_1            // TNT & pressure plates beneath it (special part for parkour rooms determines the floor)
-//          ovdb_room_parkour_drop_2            // Water pit
-//          ovdb_room_parkour_drop_3            // Stalagmite pit
-//          ovdb_room_parkour_drop_4            // Just a drop
-//          ovdb_room_parkour_drop_5            // Crystals
-//      ovdb_core_treasury                  // Just two variants for the treasury which can spawn
-//          ovdb_core_treasury_1                // Tidy safe-like storage warehouse, bedrock encased besides boss room entrance, 8 spots for treasury loot
-//          ovdb_core_treasury_2                // Overgrown, lots of flags, poorly kept storage warehouse, bedrock encased, 8 spots for treasury loot
-//      ovdb_room_part_treasury             // Just variants for the boss room treasure chambers, all of these being piles that spawn regardless of the room chosen
-//          ovdb_room_part_treasury_1           // Cobwebs, ovdb_feature_spawner
-//          ovdb_room_part_treasury_2           // Leaves, ovdb_feature_treasure_1
-//          ovdb_room_part_treasury_3           // Hay bales, ovdb_feature_treasure_2
-//          ovdb_room_part_treasury_4           // Brewing stand, ovdb_feature_treasure_3
-//          ovdb_room_part_treasury_5           // ovdb_feature_treasure_1 & ovdb_feature_treasure_2
-//          ovdb_room_part_treasury_6           // Leaves, 1 iron block
-//          ovdb_room_part_treasury_7           // Iron blocks, ovdb_feature_treasure_1
-//          ovdb_room_part_treasury_8           // Diamond block, singular
-//          ovdb_room_part_treasury_9           // Gold blocks
-//          ovdb_room_part_treasury_10          // Emerald blocks & iron blocks
-//          ovdb_room_part_treasury_11          // Bookshelves (sacred books)
-//          ovdb_room_part_treasury_12          // ovdb_feature_miniboss, diamond blocks
-//          ovdb_room_part_treasury_13          // Gold & emerald blocks
-//          ovdb_room_part_treasury_14          // Iron blocks & 1 diamond block
-//          ovdb_room_part_treasury_15          // ovdb_feature_treasure_1 & ovdb_feature_treasure_3
-//          ovdb_room_part_treasury_16          // ovdb_feature_treasure_2 & ovdb_feature_treasure_3
+//      ovdb_room_dungeon                   // Giant and long rooms in the dungeons to give the impression of variety
+//          ovdb_room_dungeon_1                 // Longest tunnel (48x7), overgrown, at least 16 connections bridging off on either side and at the end
+//          ovdb_room_dungeon_2                 // Longest tunnel (48x7), very broken, at least 16 connections bridging off on either side and at the end
+//          ovdb_room_dungeon_3                 // Long tunnel (36x7x6), has burial crypts on the sides, 8 total connections
+//          ovdb_room_dungeon_4                 // Long tunnel (36x7x6), very overgrown and cobwebs with burial crypts and 8 total connections
+//          ovdb_room_dungeon_5                 // Long tunnel (36x7x6), very overgrown, cobwebs, several parts with lava in the floor, broken, 8 total connections
+//          ovdb_room_dungeon_6                 // Long tunnel (36x7x6), very overgrown, cobwebs, several parts with water in the floor, 8 total connections
+//          ovdb_room_dungeon_7                 // Big underground catacomb room (15x15x6), lots of rows of crypts blocking line of sight
+//          ovdb_room_dungeon_8                 // ^ Overgrown and broken
+//          ovdb_room_dungeon_9                 // Long room with prison cells on one side and catacombs the other (39x13x6)
+//          ovdb_room_dungeon_10                // Prison cells on both sides of a long room (39x17x6)
+//      ovdb_room_dungeon_sl                // Dungeon stairway (left)
+//          ovdb_room_dungeon_sl_1              // Simple tidy stairway
+//          ovdb_room_dungeon_sl_2              // Messy overgrown stairway
+//          ovdb_room_dungeon_sl_3              // Cobweb infested stairway
+//          ovdb_room_dungeon_sl_4              // Cobweb infested broken stairway
+//          ovdb_room_dungeon_sl_5              // Overgrown broken stairway
+//          ovdb_room_dungeon_sl_6              // Tidy stairway with only two paths left and right
+//          ovdb_room_dungeon_sl_7              // Overgrown stairway with only two paths left and right
+//          ovdb_room_dungeon_sl_8              // Overgrown stairway with four paths
+//      ovdb_room_dungeon_sr                // Dungeon stairway (right)
+//          ovdb_room_dungeon_sr_1              // ^
+//          ovdb_room_dungeon_sr_2              // ^
+//          ovdb_room_dungeon_sr_3              // ^
+//          ovdb_room_dungeon_sr_4              // ^
+//          ovdb_room_dungeon_sr_5              // ^
+//          ovdb_room_dungeon_sr_6              // ^
+//          ovdb_room_dungeon_sr_7              // ^
+//          ovdb_room_dungeon_sr_8              // ^
+//      ovdb_room_part_armoury              // Just variants for armoury (5x5)
+//          ovdb_room_part_armoury_1            // Multiple blast furnaces
+//          ovdb_room_part_armoury_2            // Lava inside a giant stone brick chimney like design
+//          ovdb_room_part_armoury_3            // Anvil, and some other small workbenches like a crafting table and furnace with a table
+//          ovdb_room_part_armoury_4            // Armour stand with chainmail armour, on a display table
+//          ovdb_room_part_armoury_5            // Three armour stands with varied chainmail and leather armour, on a display table
+//          ovdb_room_part_armoury_6            // Barrel cupboards, and an anvil
+//          ovdb_room_part_armoury_7            // Armour stands with nothing on, on a display table
+//          ovdb_room_part_armoury_8            // Encased cupboard of sorts with crafting stations, armour stand on surface within cupboard, furnaces, & a chair
 //      ovdb_room_part_bedrooms             // Just variants for bedrooms
 //          ovdb_room_part_bedrooms_1           // Bed, tables
 //          ovdb_room_part_bedrooms_2           // Bed, table, wardrobe
@@ -205,133 +184,15 @@
 //          ovdb_room_part_bedroomsr_6          // ^
 //          ovdb_room_part_bedroomsr_7          // ^
 //          ovdb_room_part_bedroomsr_8          // ^
-//      ovdb_room_part_paths                // Just variants for connecting paths
-//          ovdb_room_part_paths_1              // Bench 1
-//          ovdb_room_part_paths_2              // Bookshelf
-//          ovdb_room_part_paths_3              // Flowers
-//          ovdb_room_part_paths_4              // Table & Chairs
-//          ovdb_room_part_paths_5              // Chairs & Flowers
-//          ovdb_room_part_paths_6              // Armour Stand
-//          ovdb_room_part_paths_7              // Armour Stand & Leather Armour (two)
-//          ovdb_room_part_paths_8              // Flowers
-//          ovdb_room_part_paths_9              // Bench 2
-//          ovdb_room_part_paths_10             // Bookshelf
-//          ovdb_room_part_paths_11             // Redstone lamp off
-//          ovdb_room_part_paths_12             // Redstone lamp on
-//          ovdb_room_part_paths_13             // Broken floor
-//          ovdb_room_part_paths_14             // Broken floor 2
-//          ovdb_room_part_paths_15             // Broken floor 3
-//          ovdb_room_part_paths_16             // Overgrowth 1
-//          ovdb_room_part_paths_17             // Overgrowth 2
-//          ovdb_room_part_paths_18             // Overgrowth 3
-//          ovdb_room_part_paths_19             // Crystal expansion
-//          ovdb_room_part_paths_20             // Overgrowth & Broken floor
-//          ovdb_room_part_paths_21             // Broken floor 4
-//          ovdb_room_part_paths_22             // Overgrowth 4
-//          ovdb_room_part_paths_23             // Cobwebs
-//          ovdb_room_part_paths_24             // Bench 3
-//          ovdb_room_part_paths_25             // Broken floor 5
-//          ovdb_room_part_paths_26             // Missing floor 1
-//          ovdb_room_part_paths_27             // Leaves & seat
-//          ovdb_room_part_paths_28             // Carpet
-//          ovdb_room_part_paths_29             // Nothing
-//          ovdb_room_part_paths_30             // Armour Stand & Chainmail Armour (one)
-//      ovdb_room_part_living_quarters      // Just variants for living quarters
-//          ovdb_room_part_living_quarters_1    // Piano
-//          ovdb_room_part_living_quarters_2    // Fireplace
-//          ovdb_room_part_living_quarters_3    // Cosy seating around a table
-//          ovdb_room_part_living_quarters_4    // Collapsed roof
-//          ovdb_room_part_living_quarters_5    // Bookshelves
-//          ovdb_room_part_living_quarters_6    // Other table
-//          ovdb_room_part_living_quarters_7    // Working redstone lamp
-//          ovdb_room_part_living_quarters_8    // Yet another table and a couch
-//          ovdb_room_part_living_quarters_9    // Bookshelves over a couple chairs
-//          ovdb_room_part_living_quarters_10   // Display cabinet/case and some barrels
-//      ovdb_room_part_stairwayl            // Just variants for stair parts in core rooms (all core rooms) (left half)
-//          ovdb_room_part_stairwayl_1          // Stairway completely collapsed
-//          ovdb_room_part_stairwayl_2          // Stairway relatively intact, mostly okay
-//          ovdb_room_part_stairwayl_3          // Stairway blocked by overgrowth
-//          ovdb_room_part_stairwayl_4          // Stairway with a couple holes in it
-//          ovdb_room_part_stairwayl_5          // Stairway half broken, bottom half intact
-//          ovdb_room_part_stairwayl_6          // Stairway half broken, top half intact
-//          ovdb_room_part_stairwayl_7          // Stairway with a lot of crystals on it
-//          ovdb_room_part_stairwayl_8          // Stairway mostly intact, but overgrowth dangerously close on all sides, very overgrown
-//      ovdb_room_part_stairwayr            // Just variants for stair parts in core rooms (all core rooms) (right half)
-//          ovdb_room_part_stairwayr_1          // ^
-//          ovdb_room_part_stairwayr_2          // ^
-//          ovdb_room_part_stairwayr_3          // ^
-//          ovdb_room_part_stairwayr_4          // ^
-//          ovdb_room_part_stairwayr_5          // ^
-//          ovdb_room_part_stairwayr_6          // ^
-//          ovdb_room_part_stairwayr_7          // ^
-//          ovdb_room_part_stairwayr_8          // ^
-//      ovdb_room_part_throne_rooml         // Just variants for throne room parts in core rooms (left half)
-//          ovdb_room_part_throne_rooml_1       // Pillar, tidy throne half, tidy floor, path piece
-//          ovdb_room_part_throne_rooml_2       // Pillar, tidy throne half, damaged floor, path piece
-//          ovdb_room_part_throne_rooml_3       // No pillar, tidy throne half, two path pieces
-//          ovdb_room_part_throne_rooml_4       // No pillar, messy throne half, path piece, dining hall piece
-//          ovdb_room_part_throne_rooml_5       // Pillar, intact throne half, overgrowth everywhere, no pieces
-//          ovdb_room_part_throne_rooml_6       // Broken pillar, broken throne half, fallen floor
-//          ovdb_room_part_throne_rooml_7       // Pillar, intact throne half, cobweb infestation
-//          ovdb_room_part_throne_rooml_8       // Pillar, intact throne half, extra pillar
-//      ovdb_room_part_throne_roomr         // Just variants for throne room parts in core rooms (right half)
-//          ovdb_room_part_throne_roomr_1       // ^
-//          ovdb_room_part_throne_roomr_2       // ^
-//          ovdb_room_part_throne_roomr_3       // ^
-//          ovdb_room_part_throne_roomr_4       // ^
-//          ovdb_room_part_throne_roomr_5       // ^
-//          ovdb_room_part_throne_roomr_6       // ^
-//          ovdb_room_part_throne_roomr_7       // ^
-//          ovdb_room_part_throne_roomr_8       // ^
-//      ovdb_room_part_stairway             // Just variants for stair parts in anywhere (3x3, shorter)
-//          ovdb_room_part_stairway_1           // Stairway completely collapsed
-//          ovdb_room_part_stairway_2           // Stairway relatively intact, mostly okay
-//          ovdb_room_part_stairway_3           // Stairway blocked by overgrowth
-//          ovdb_room_part_stairway_4           // Stairway with a couple holes in it
-//          ovdb_room_part_stairway_5           // Stairway half broken, bottom half intact
-//          ovdb_room_part_stairway_6           // Stairway half broken, top half intact
-//          ovdb_room_part_stairway_7           // Stairway with a lot of crystals on it
-//          ovdb_room_part_stairway_8           // Stairway mostly intact, but overgrowth dangerously close on all sides, very overgrown
-//      ovdb_room_part_prison_m             // Just variants for mini prison rooms (3x3)
-//          ovdb_room_part_prison_m_1           // Wood slab bed, cauldron, cobwebs, leaves
-//          ovdb_room_part_prison_m_2           // Wood slab bed, cobwebs, leaves
-//          ovdb_room_part_prison_m_3           // Wood slab bed, leaves+
-//          ovdb_room_part_prison_m_4           // Raised wood slab bed, shelf, cauldron
-//          ovdb_room_part_prison_m_5           // Cauldron, cobwebs
-//          ovdb_room_part_prison_m_6           // Crystal overgrowth, raised wood slab bed
-//          ovdb_room_part_prison_m_7           // Crystals, cauldron
-//          ovdb_room_part_prison_m_8           // Cobble slab bed, desk
-//          ovdb_room_part_prison_m_9           // Two cobble slab beds, leaves
-//          ovdb_room_part_prison_m_10          // Actual bed, chairs and table, crystals, spawner
-//      ovdb_room_part_prison               // Just variants for prisons (5x5)
-//          ovdb_room_part_prison_1             // Leaves and cobwebs
-//          ovdb_room_part_prison_2             // Actual bed
-//          ovdb_room_part_prison_3             // Wood slab bed
-//          ovdb_room_part_prison_4             // Cauldron, cobwebs
-//          ovdb_room_part_prison_5             // Leaves
-//          ovdb_room_part_prison_6             // Crystals, wood slab bed
-//          ovdb_room_part_prison_7             // Crystal overgrowth
-//          ovdb_room_part_prison_8             // Nothing
-//          ovdb_room_part_prison_9             // Broken floor, leaves, wood slab bed
-//          ovdb_room_part_prison_10            // Wood slab bed, cauldron
-//      ovdb_room_part_prisonl              // Just variants for prisons (core, left)
-//          ovdb_room_part_prisonl_1            // One large medium height cell
-//          ovdb_room_part_prisonl_2            // Two floored cell block
-//          ovdb_room_part_prisonl_3            // One floor cell block with seating area on top
-//          ovdb_room_part_prisonl_4            // Two floored cell block completely consumed by amethyst crystals
-//          ovdb_room_part_prisonl_5            // One large medium height cell, broken, badly
-//          ovdb_room_part_prisonl_6            // One large room height cell
-//          ovdb_room_part_prisonl_7            // Two floored large medium height cells
-//          ovdb_room_part_prisonl_8            // One floor cell block with seating area beneath
-//      ovdb_room_part_prisonr              // Just variants for prisons (core, right)
-//          ovdb_room_part_prisonr_1            // ^
-//          ovdb_room_part_prisonr_2            // ^
-//          ovdb_room_part_prisonr_3            // ^
-//          ovdb_room_part_prisonr_4            // ^
-//          ovdb_room_part_prisonr_5            // ^
-//          ovdb_room_part_prisonr_6            // ^
-//          ovdb_room_part_prisonr_7            // ^
-//          ovdb_room_part_prisonr_8            // ^
+//      ovdb_room_part_coliseum             // Variants for core boss room corners, coliseum
+//          ovdb_room_part_coliseum_1           // Very broken floor, lots of cobwebs, pillar upholding ceiling
+//          ovdb_room_part_coliseum_2           // Tidy, clear, pillar upholding ceiling
+//          ovdb_room_part_coliseum_3           // Rocks, pillar upholding ceiling
+//          ovdb_room_part_coliseum_4           // Very, very overgrown, pillar upholding ceiling
+//          ovdb_room_part_coliseum_5           // Crystal overgrowth, consuming pillar upholding ceiling
+//          ovdb_room_part_coliseum_6           // Rocks, crystal overgrowth, consuming pillar upholding ceiling
+//          ovdb_room_part_coliseum_7           // Crystal overgrowth up above consuming pillar, lots of cobwebs below, broken floor, fallen broken pillar
+//          ovdb_room_part_coliseum_8           // Overgrown, pillar collapsed
 //      ovdb_room_part_dining_hall          // Just variants for dining halls larger pieces
 //          ovdb_room_part_dining_hall_1        // 4 mini tables
 //          ovdb_room_part_dining_hall_2        // 2 mini tables and 1 mini table with 4 chairs
@@ -354,94 +215,23 @@
 //          ovdb_room_part_dining_hall_m_8      // 4 chairs
 //          ovdb_room_part_dining_hall_m_9      // Broken floor
 //          ovdb_room_part_dining_hall_m_10     // Bookshelves, 1 mini table and 1 chair
-//      ovdb_room_part_pantry               // Just variants for pantries / kitchens (3x3, ideally against a wall like path parts)
-//          ovdb_room_part_pantry_1             // Barrel cupboards, raised and on the floor
-//          ovdb_room_part_pantry_2             // Raised barrel cupboards over some work tables
-//          ovdb_room_part_pantry_3             // Furnaces for cooking, some work tables, stove piece to catch smoke from furnace
-//          ovdb_room_part_pantry_4             // Raised barrel cupboards over a furnace and work tables
-//          ovdb_room_part_pantry_5             // Work tables and a chair
-//          ovdb_room_part_pantry_6             // Work tables, chair, raised barrel cupboards
-//          ovdb_room_part_pantry_7             // Tall kitchen cabinet type thing by using stacked barrels, slabs with some gaps, trapdoors, etc
-//          ovdb_room_part_pantry_8             // Multiple furnaces for cooking, with a chair and a side table and a dead redstone lamp
-//      ovdb_room_part_library              // Just variants for libraries (5x5)
-//          ovdb_room_part_library_1            // Bookshelves with seats in the middle and exits on multiple sides
-//          ovdb_room_part_library_2            // Bookshelves with space in the middle and exits on multiple sides
-//          ovdb_room_part_library_3            // Two parallel rows of bookshelves with a ladder up one to reach higher
-//          ovdb_room_part_library_4            // Two parallel rows of bookshelves with one crossing up high between the two
-//          ovdb_room_part_library_5            // One tall bookshelf with seats by it
-//          ovdb_room_part_library_6            // One tall bookshelf with a redstone lamp by it and a ladder to get up high
-//          ovdb_room_part_library_7            // Three tall separate thin bookshelves
-//          ovdb_room_part_library_8            // Two tall separate thin bookshelves and a ladder, plus small chair and table
-//          ovdb_room_part_library_9            // Short single row of bookshelves, nothing else
-//          ovdb_room_part_library_10           // Tall single row of bookshelves in the middle of it with an entrance through under it, and flowers on either side
-//      ovdb_room_part_libraryl             // Just variants for core libraries (left side)
-//          ovdb_room_part_libraryl_1           // Tall bookshelves, some seating area, tidy plants, minimal overgrowth
-//          ovdb_room_part_libraryl_2           // Working redstone lamp, bookshelves overhead, cosy enclosed spaces to read at, minimal damage
-//          ovdb_room_part_libraryl_3           // Very damaged, fallen bookshelf, non-functional lamp
-//          ovdb_room_part_libraryl_4           // Very overgrown, lots of bookshelves
-//          ovdb_room_part_libraryl_5           // Several places to sit on a bigger table with a lot of tall bookshelves
-//          ovdb_room_part_libraryl_6           // Very damaged floor with missing parts, but very dense bookshelves around and overhead
-//          ovdb_room_part_libraryl_7           // Extra cobwebs overhead with white wool in a lot of bookshelves
-//          ovdb_room_part_libraryl_8           // Amethyst crystal overgrowth in a bookshelf, otherwise very densely packed with bookshelves
-//      ovdb_room_part_libraryr             // Just variants for core libraries (right side)
-//          ovdb_room_part_libraryr_1           // Tall bookshelves, some seating area, tidy plants, minimal overgrowth
-//          ovdb_room_part_libraryr_2           // Working redstone lamp, bookshelves overhead, cosy enclosed spaces to read at, minimal damage
-//          ovdb_room_part_libraryr_3           // Very damaged, fallen bookshelf, non-functional lamp
-//          ovdb_room_part_libraryr_4           // Very overgrown, lots of bookshelves
-//          ovdb_room_part_libraryr_5           // Several places to sit on a bigger table with a lot of tall bookshelves
-//          ovdb_room_part_libraryr_6           // Very damaged floor with missing parts, but very dense bookshelves around and overhead
-//          ovdb_room_part_libraryr_7           // Extra cobwebs overhead with white wool in a lot of bookshelves
-//          ovdb_room_part_libraryr_8           // Amethyst crystal overgrowth in a bookshelf, otherwise very densely packed with bookshelves
-//      ovdb_room_part_guard_room           // Just variants for guard rooms (5x3, goes against a wall)
-//          ovdb_room_part_guard_room_1         // Beds lined up with side tables between them
-//          ovdb_room_part_guard_room_2         // Beds lined up, cobwebs on them, bookshelves between some
-//          ovdb_room_part_guard_room_3         // Beds lined up, working redstone lamp on one bedside table
-//          ovdb_room_part_guard_room_4         // Two beds, then tall bookshelves in the way
-//          ovdb_room_part_guard_room_5         // Two beds, with a place to sit between
-//          ovdb_room_part_guard_room_6         // Two beds, with a wardrobe
-//          ovdb_room_part_guard_room_7         // Beds lined up, dead redstone lamp on a bedside table
-//          ovdb_room_part_guard_room_8         // Beds lined up, flowers between them
-//      ovdb_room_part_garden               // Just variants for internal gardens/courtyards (3x3)
-//          ovdb_room_part_garden_1             // Small hedeges
-//          ovdb_room_part_garden_2             // Tall hedges
-//          ovdb_room_part_garden_3             // A hedge with some seats
-//          ovdb_room_part_garden_4             // A small hedge with flowers
-//          ovdb_room_part_garden_5             // Just flowers
-//          ovdb_room_part_garden_6             // Open area
-//          ovdb_room_part_garden_7             // Flowers in flower boxes
-//          ovdb_room_part_garden_8             // Lamp post, dead redstone lamp, flowers
-//          ovdb_room_part_garden_9             // Other flowers
-//          ovdb_room_part_garden_10            // Flowers and seats
-//          ovdb_room_part_garden_11            // Other kind of lamp
-//          ovdb_room_part_garden_12            // Other kind of hedge with flowers
-//          ovdb_room_part_garden_13            // Hedge with a seat in the middle
-//          ovdb_room_part_garden_14            // Open area with a flower on the ground
-//          ovdb_room_part_garden_15            // Cobwebs with a flower
-//          ovdb_room_part_garden_16            // Overgrown leaf pile
-//      ovdb_room_part_prayer_hall          // Just variants for prayer hall (pews, flowers & bookshelves, 5x1)
-//          ovdb_room_part_prayer_hall_1        // Pew, gap on one side
-//          ovdb_room_part_prayer_hall_2        // Pew, flower
-//          ovdb_room_part_prayer_hall_3        // Pew, bookshelves either side
-//          ovdb_room_part_prayer_hall_4        // No pew, just short bookshelves
-//          ovdb_room_part_prayer_hall_5        // Pew, flowers either side
-//          ovdb_room_part_prayer_hall_6        // Two pews split by a flower
-//          ovdb_room_part_prayer_hall_7        // Long pew
-//          ovdb_room_part_prayer_hall_8        // Pew, gap on other side
-//      ovdb_room_part_armoury              // Just variants for armoury (5x5)
-//          ovdb_room_part_armoury_1            // Multiple blast furnaces
-//          ovdb_room_part_armoury_2            // Lava inside a giant stone brick chimney like design
-//          ovdb_room_part_armoury_3            // Anvil, and some other small workbenches like a crafting table and furnace with a table
-//          ovdb_room_part_armoury_4            // Armour stand with chainmail armour, on a display table
-//          ovdb_room_part_armoury_5            // Three armour stands with varied chainmail and leather armour, on a display table
-//          ovdb_room_part_armoury_6            // Barrel cupboards, and an anvil
-//          ovdb_room_part_armoury_7            // Armour stands with nothing on, on a display table
-//          ovdb_room_part_armoury_8            // Encased cupboard of sorts with crafting stations, armour stand on surface within cupboard, furnaces, & a chair
-//      ovdb_room_part_statue               // Just variants for statue
-//          ovdb_room_part_statue_1             // Statue of a ruler, a human lord
-//          ovdb_room_part_statue_2             // Statue of a ruler, a dwarf lord
-//          ovdb_room_part_statue_3             // Statue of an angel
-//          ovdb_room_part_statue_4             // Broken, unrecognisable statue, quartz
-//          ovdb_room_part_statue_5             // Broken, unrecognisable statue with enormous amethyst crystals growing out from within the stand
+//      ovdb_room_part_display_room         // Just variants for display room
+//          ovdb_room_part_display_room_1       // Ceiling collapse ruined display, glass on ground
+//          ovdb_room_part_display_room_2       // Obsidian block on display in a glass case, lamps on walls, overgrowth
+//          ovdb_room_part_display_room_3       // Skeleton head on display in a glass case, sign specifying it's the former ruler, floor broken around it
+//          ovdb_room_part_display_room_4       // Diamond block on display in a larger glass case, surrounded by iron bars
+//          ovdb_room_part_display_room_5       // Mini quartz statue
+//          ovdb_room_part_display_room_6       // Empty display case
+//          ovdb_room_part_display_room_7       // Cobwebs in a display case
+//          ovdb_room_part_display_room_8       // Entire part of the floor collapsed
+//          ovdb_room_part_display_room_9       // Table and chairs
+//          ovdb_room_part_display_room_10      // Bookshelves, with chairs
+//          ovdb_room_part_display_room_11      // Other mini quartz statue
+//          ovdb_room_part_display_room_12      // Gold block on display
+//          ovdb_room_part_display_room_13      // Nothing but overgrowth and some crystals on floor
+//          ovdb_room_part_display_room_14      // A couple chairs
+//          ovdb_room_part_display_room_15      // Some collapsed bookshelves and a fallen wall
+//          ovdb_room_part_display_room_16      // Another mini quartz statue
 //      ovdb_room_part_entrance_hall_l1l    // Just variants for entrance hall (core room only, 1st floor) (left half)
 //          ovdb_room_part_entrance_hall_l1l_1  // Bookshelves around table, relatively hefty damage to surroundings
 //          ovdb_room_part_entrance_hall_l1l_2  // Wall collapsed onto table and bookshelves
@@ -496,56 +286,569 @@
 //          ovdb_room_part_entrance_hall_l2r_6  // ^
 //          ovdb_room_part_entrance_hall_l2r_7  // ^
 //          ovdb_room_part_entrance_hall_l2r_8  // ^
-//      ovdb_room_part_display_room         // Just variants for display room
-//          ovdb_room_part_display_room_1       // Ceiling collapse ruined display, glass on ground
-//          ovdb_room_part_display_room_2       // Obsidian block on display in a glass case, lamps on walls, overgrowth
-//          ovdb_room_part_display_room_3       // Skeleton head on display in a glass case, sign specifying it's the former ruler, floor broken around it
-//          ovdb_room_part_display_room_4       // Diamond block on display in a larger glass case, surrounded by iron bars
-//          ovdb_room_part_display_room_5       // Mini quartz statue
-//          ovdb_room_part_display_room_6       // Empty display case
-//          ovdb_room_part_display_room_7       // Cobwebs in a display case
-//          ovdb_room_part_display_room_8       // Entire part of the floor collapsed
-//          ovdb_room_part_display_room_9       // Table and chairs
-//          ovdb_room_part_display_room_10      // Bookshelves, with chairs
-//          ovdb_room_part_display_room_11      // Other mini quartz statue
-//          ovdb_room_part_display_room_12      // Gold block on display
-//          ovdb_room_part_display_room_13      // Nothing but overgrowth and some crystals on floor
-//          ovdb_room_part_display_room_14      // A couple chairs
-//          ovdb_room_part_display_room_15      // Some collapsed bookshelves and a fallen wall
-//          ovdb_room_part_display_room_16      // Another mini quartz statue
+//      ovdb_room_part_garden               // Just variants for internal gardens/courtyards (3x3)
+//          ovdb_room_part_garden_1             // Small hedges
+//          ovdb_room_part_garden_2             // Tall hedges
+//          ovdb_room_part_garden_3             // A hedge with some seats
+//          ovdb_room_part_garden_4             // A small hedge with flowers
+//          ovdb_room_part_garden_5             // Just flowers
+//          ovdb_room_part_garden_6             // Open area
+//          ovdb_room_part_garden_7             // Flowers in flower boxes
+//          ovdb_room_part_garden_8             // Lamp post, dead redstone lamp, flowers
+//          ovdb_room_part_garden_9             // Other flowers
+//          ovdb_room_part_garden_10            // Flowers and seats
+//          ovdb_room_part_garden_11            // Other kind of lamp
+//          ovdb_room_part_garden_12            // Other kind of hedge with flowers
+//          ovdb_room_part_garden_13            // Hedge with a seat in the middle
+//          ovdb_room_part_garden_14            // Open area with a flower on the ground
+//          ovdb_room_part_garden_15            // Cobwebs with a flower
+//          ovdb_room_part_garden_16            // Overgrown leaf pile
+//      ovdb_room_part_guard_room           // Just variants for guard rooms (5x3, goes against a wall)
+//          ovdb_room_part_guard_room_1         // Beds lined up with side tables between them
+//          ovdb_room_part_guard_room_2         // Beds lined up, cobwebs on them, bookshelves between some
+//          ovdb_room_part_guard_room_3         // Beds lined up, working redstone lamp on one bedside table
+//          ovdb_room_part_guard_room_4         // Two beds, then tall bookshelves in the way
+//          ovdb_room_part_guard_room_5         // Two beds, with a place to sit between
+//          ovdb_room_part_guard_room_6         // Two beds, with a wardrobe
+//          ovdb_room_part_guard_room_7         // Beds lined up, dead redstone lamp on a bedside table
+//          ovdb_room_part_guard_room_8         // Beds lined up, flowers between them
+//      ovdb_room_part_library              // Just variants for libraries (5x5)
+//          ovdb_room_part_library_1            // Bookshelves with seats in the middle and exits on multiple sides
+//          ovdb_room_part_library_2            // Bookshelves with space in the middle and exits on multiple sides
+//          ovdb_room_part_library_3            // Two parallel rows of bookshelves with a ladder up one to reach higher
+//          ovdb_room_part_library_4            // Two parallel rows of bookshelves with one crossing up high between the two
+//          ovdb_room_part_library_5            // One tall bookshelf with seats by it
+//          ovdb_room_part_library_6            // One tall bookshelf with a redstone lamp by it and a ladder to get up high
+//          ovdb_room_part_library_7            // Three tall separate thin bookshelves
+//          ovdb_room_part_library_8            // Two tall separate thin bookshelves and a ladder, plus small chair and table
+//          ovdb_room_part_library_9            // Short single row of bookshelves, nothing else
+//          ovdb_room_part_library_10           // Tall single row of bookshelves in the middle of it with an entrance through under it, and flowers on either side
+//      ovdb_room_part_libraryl             // Just variants for core libraries (left side)
+//          ovdb_room_part_libraryl_1           // Tall bookshelves, some seating area, tidy plants, minimal overgrowth
+//          ovdb_room_part_libraryl_2           // Working redstone lamp, bookshelves overhead, cosy enclosed spaces to read at, minimal damage
+//          ovdb_room_part_libraryl_3           // Very damaged, fallen bookshelf, non-functional lamp
+//          ovdb_room_part_libraryl_4           // Very overgrown, lots of bookshelves
+//          ovdb_room_part_libraryl_5           // Several places to sit on a bigger table with a lot of tall bookshelves
+//          ovdb_room_part_libraryl_6           // Very damaged floor with missing parts, but very dense bookshelves around and overhead
+//          ovdb_room_part_libraryl_7           // Extra cobwebs overhead with white wool in a lot of bookshelves
+//          ovdb_room_part_libraryl_8           // Amethyst crystal overgrowth in a bookshelf, otherwise very densely packed with bookshelves
+//      ovdb_room_part_libraryr             // Just variants for core libraries (right side)
+//          ovdb_room_part_libraryr_1           // Tall bookshelves, some seating area, tidy plants, minimal overgrowth
+//          ovdb_room_part_libraryr_2           // Working redstone lamp, bookshelves overhead, cosy enclosed spaces to read at, minimal damage
+//          ovdb_room_part_libraryr_3           // Very damaged, fallen bookshelf, non-functional lamp
+//          ovdb_room_part_libraryr_4           // Very overgrown, lots of bookshelves
+//          ovdb_room_part_libraryr_5           // Several places to sit on a bigger table with a lot of tall bookshelves
+//          ovdb_room_part_libraryr_6           // Very damaged floor with missing parts, but very dense bookshelves around and overhead
+//          ovdb_room_part_libraryr_7           // Extra cobwebs overhead with white wool in a lot of bookshelves
+//          ovdb_room_part_libraryr_8           // Amethyst crystal overgrowth in a bookshelf, otherwise very densely packed with bookshelves
+//      ovdb_room_part_living_quarters      // Just variants for living quarters
+//          ovdb_room_part_living_quarters_1    // Piano
+//          ovdb_room_part_living_quarters_2    // Fireplace
+//          ovdb_room_part_living_quarters_3    // Cosy seating around a table
+//          ovdb_room_part_living_quarters_4    // Collapsed roof
+//          ovdb_room_part_living_quarters_5    // Bookshelves
+//          ovdb_room_part_living_quarters_6    // Other table
+//          ovdb_room_part_living_quarters_7    // Working redstone lamp
+//          ovdb_room_part_living_quarters_8    // Yet another table and a couch
+//          ovdb_room_part_living_quarters_9    // Bookshelves over a couple chairs
+//          ovdb_room_part_living_quarters_10   // Display cabinet/case and some barrels
+//      ovdb_room_part_pantry               // Just variants for pantries / kitchens (3x3, ideally against a wall like path parts)
+//          ovdb_room_part_pantry_1             // Barrel cupboards, raised and on the floor
+//          ovdb_room_part_pantry_2             // Raised barrel cupboards over some work tables
+//          ovdb_room_part_pantry_3             // Furnaces for cooking, some work tables, stove piece to catch smoke from furnace
+//          ovdb_room_part_pantry_4             // Raised barrel cupboards over a furnace and work tables
+//          ovdb_room_part_pantry_5             // Work tables and a chair
+//          ovdb_room_part_pantry_6             // Work tables, chair, raised barrel cupboards
+//          ovdb_room_part_pantry_7             // Tall kitchen cabinet type thing by using stacked barrels, slabs with some gaps, trapdoors, etc
+//          ovdb_room_part_pantry_8             // Multiple furnaces for cooking, with a chair and a side table and a dead redstone lamp
+//      ovdb_room_part_parkour              // Just variants for parkour rooms; trap parkour rooms, lava/water rooms with platforms, redstone parkour walls, etc
+//          ovdb_room_parkour_1                 // Trapkour, piston pushes off
+//          ovdb_room_parkour_2                 // Trapkour, impossible jump from caved in floor
+//          ovdb_room_parkour_3                 // Trapkour, blocked jump from caved in roof
+//          ovdb_room_parkour_4                 // Trapkour, pressure plate on several TNT blocks within collapsed rock/roof
+//          ovdb_room_parkour_5                 // Parkour, easy jumps on broken floor
+//          ovdb_room_parkour_6                 // Parkour, no jumps, no floor
+//          ovdb_room_parkour_7                 // Parkour, difficult, doable jumps on broken floor
+//          ovdb_room_parkour_8                 // Parkour, no jumps, wooden floor floor fully traversable, albeit messy
+//          ovdb_room_parkour_9                 // Parkour, has redstone pistons that can be expanded with levers to make possible jumps across wooden floor
+//          ovdb_room_parkour_10                // Parkour, can jump on furniture to get up higher and then get across a missing wooden floor gap
+//      ovdb_room_part_parkour_drop
+//          ovdb_room_parkour_drop_1            // TNT & pressure plates beneath it (special part for parkour rooms determines the floor)
+//          ovdb_room_parkour_drop_2            // Water pit
+//          ovdb_room_parkour_drop_3            // Stalagmite pit
+//          ovdb_room_parkour_drop_4            // Just a drop
+//          ovdb_room_parkour_drop_5            // Crystals
+//      ovdb_room_part_paths                // Just variants for connecting paths
+//          ovdb_room_part_paths_1              // Bench 1
+//          ovdb_room_part_paths_2              // Bookshelf
+//          ovdb_room_part_paths_3              // Flowers
+//          ovdb_room_part_paths_4              // Table & Chairs
+//          ovdb_room_part_paths_5              // Chairs & Flowers
+//          ovdb_room_part_paths_6              // Armour Stand
+//          ovdb_room_part_paths_7              // Armour Stand & Leather Armour (two)
+//          ovdb_room_part_paths_8              // Flowers
+//          ovdb_room_part_paths_9              // Bench 2
+//          ovdb_room_part_paths_10             // Bookshelf
+//          ovdb_room_part_paths_11             // Redstone lamp off
+//          ovdb_room_part_paths_12             // Redstone lamp on
+//          ovdb_room_part_paths_13             // Broken floor
+//          ovdb_room_part_paths_14             // Broken floor 2
+//          ovdb_room_part_paths_15             // Broken floor 3
+//          ovdb_room_part_paths_16             // Overgrowth 1
+//          ovdb_room_part_paths_17             // Overgrowth 2
+//          ovdb_room_part_paths_18             // Overgrowth 3
+//          ovdb_room_part_paths_19             // Crystal expansion
+//          ovdb_room_part_paths_20             // Overgrowth & Broken floor
+//          ovdb_room_part_paths_21             // Broken floor 4
+//          ovdb_room_part_paths_22             // Overgrowth 4
+//          ovdb_room_part_paths_23             // Cobwebs
+//          ovdb_room_part_paths_24             // Bench 3
+//          ovdb_room_part_paths_25             // Broken floor 5
+//          ovdb_room_part_paths_26             // Missing floor 1
+//          ovdb_room_part_paths_27             // Leaves & seat
+//          ovdb_room_part_paths_28             // Carpet
+//          ovdb_room_part_paths_29             // Nothing
+//          ovdb_room_part_paths_30             // Armour Stand & Chainmail Armour (one)
+//      ovdb_room_part_prayer_hall          // Just variants for prayer hall (pews, flowers & bookshelves, 5x1)
+//          ovdb_room_part_prayer_hall_1        // Pew, gap on one side
+//          ovdb_room_part_prayer_hall_2        // Pew, flower
+//          ovdb_room_part_prayer_hall_3        // Pew, bookshelves either side
+//          ovdb_room_part_prayer_hall_4        // No pew, just short bookshelves
+//          ovdb_room_part_prayer_hall_5        // Pew, flowers either side
+//          ovdb_room_part_prayer_hall_6        // Two pews split by a flower
+//          ovdb_room_part_prayer_hall_7        // Long pew
+//          ovdb_room_part_prayer_hall_8        // Pew, gap on other side
+//      ovdb_room_part_prison               // Just variants for prisons (5x5)
+//          ovdb_room_part_prison_1             // Leaves and cobwebs
+//          ovdb_room_part_prison_2             // Actual bed
+//          ovdb_room_part_prison_3             // Wood slab bed
+//          ovdb_room_part_prison_4             // Cauldron, cobwebs
+//          ovdb_room_part_prison_5             // Leaves
+//          ovdb_room_part_prison_6             // Crystals, wood slab bed
+//          ovdb_room_part_prison_7             // Crystal overgrowth
+//          ovdb_room_part_prison_8             // Nothing
+//          ovdb_room_part_prison_9             // Broken floor, leaves, wood slab bed
+//          ovdb_room_part_prison_10            // Wood slab bed, cauldron, feature
+//      ovdb_room_part_prison_m             // Just variants for mini prison rooms (3x3)
+//          ovdb_room_part_prison_m_1           // Wood slab bed, cauldron, cobwebs, leaves
+//          ovdb_room_part_prison_m_2           // Wood slab bed, cobwebs, leaves
+//          ovdb_room_part_prison_m_3           // Wood slab bed, leaves+
+//          ovdb_room_part_prison_m_4           // Raised wood slab bed, shelf, cauldron
+//          ovdb_room_part_prison_m_5           // Cauldron, cobwebs
+//          ovdb_room_part_prison_m_6           // Crystal overgrowth, raised wood slab bed
+//          ovdb_room_part_prison_m_7           // Crystals, cauldron
+//          ovdb_room_part_prison_m_8           // Cobble slab bed, desk
+//          ovdb_room_part_prison_m_9           // Two cobble slab beds, leaves
+//          ovdb_room_part_prison_m_10          // Actual bed, chairs and table, crystals, feature
+//      ovdb_room_part_prisonl              // Just variants for prisons (core, left)
+//          ovdb_room_part_prisonl_1            // One large medium height cell
+//          ovdb_room_part_prisonl_2            // Two floored cell block
+//          ovdb_room_part_prisonl_3            // One floor cell block with seating area on top
+//          ovdb_room_part_prisonl_4            // Two floored cell block completely consumed by amethyst crystals
+//          ovdb_room_part_prisonl_5            // One large medium height cell, broken, badly
+//          ovdb_room_part_prisonl_6            // One large room height cell
+//          ovdb_room_part_prisonl_7            // Two floored large medium height cells
+//          ovdb_room_part_prisonl_8            // One floor cell block with seating area beneath
+//      ovdb_room_part_prisonr              // Just variants for prisons (core, right)
+//          ovdb_room_part_prisonr_1            // ^
+//          ovdb_room_part_prisonr_2            // ^
+//          ovdb_room_part_prisonr_3            // ^
+//          ovdb_room_part_prisonr_4            // ^
+//          ovdb_room_part_prisonr_5            // ^
+//          ovdb_room_part_prisonr_6            // ^
+//          ovdb_room_part_prisonr_7            // ^
+//          ovdb_room_part_prisonr_8            // ^
+//      ovdb_room_part_sbedroom             // Variants for core boss room corners, royal bedroom; note these will result in multiple beds, intentionally - it's royal
+//          ovdb_room_part_sbedroom_1           // Triple bed, fully regal with an overhang and flowers at both sides, albeit broken floor
+//          ovdb_room_part_sbedroom_2           // The same, but overgrown with more seats around it instead of broken floor
+//          ovdb_room_part_sbedroom_3           // A bunch of seating arrangements, particularly a couch-like one
+//          ovdb_room_part_sbedroom_4           // A lot of flowers, bookshelves, single bed with its own royal flair
+//          ovdb_room_part_sbedroom_5           // More bookshelves, double bed with royal flair
+//          ovdb_room_part_sbedroom_6           // A bunch of bookshelves around seating arrangements
+//          ovdb_room_part_sbedroom_7           // Somewhat open part of floor with a simple bed, just a couple flowers
+//          ovdb_room_part_sbedroom_8           // Double bed, regal, wardrobe too, otherwise very open floor
+//      ovdb_room_part_stairway             // Just variants for stair parts in anywhere (3x3, shorter)
+//          ovdb_room_part_stairway_1           // Stairway completely collapsed
+//          ovdb_room_part_stairway_2           // Stairway relatively intact, mostly okay
+//          ovdb_room_part_stairway_3           // Stairway blocked by overgrowth
+//          ovdb_room_part_stairway_4           // Stairway with a couple holes in it
+//          ovdb_room_part_stairway_5           // Stairway half broken, bottom half intact
+//          ovdb_room_part_stairway_6           // Stairway half broken, top half intact
+//          ovdb_room_part_stairway_7           // Stairway with a lot of crystals on it
+//          ovdb_room_part_stairway_8           // Stairway mostly intact, but overgrowth dangerously close on all sides, very overgrown
+//      ovdb_room_part_stairwayl            // Just variants for stair parts in core rooms (all core rooms) (left half)
+//          ovdb_room_part_stairwayl_1          // Stairway completely collapsed
+//          ovdb_room_part_stairwayl_2          // Stairway relatively intact, mostly okay
+//          ovdb_room_part_stairwayl_3          // Stairway blocked by overgrowth
+//          ovdb_room_part_stairwayl_4          // Stairway with a couple holes in it
+//          ovdb_room_part_stairwayl_5          // Stairway half broken, bottom half intact
+//          ovdb_room_part_stairwayl_6          // Stairway half broken, top half intact
+//          ovdb_room_part_stairwayl_7          // Stairway with a lot of crystals on it
+//          ovdb_room_part_stairwayl_8          // Stairway mostly intact, but overgrowth dangerously close on all sides, very overgrown
+//      ovdb_room_part_stairwayr            // Just variants for stair parts in core rooms (all core rooms) (right half)
+//          ovdb_room_part_stairwayr_1          // ^
+//          ovdb_room_part_stairwayr_2          // ^
+//          ovdb_room_part_stairwayr_3          // ^
+//          ovdb_room_part_stairwayr_4          // ^
+//          ovdb_room_part_stairwayr_5          // ^
+//          ovdb_room_part_stairwayr_6          // ^
+//          ovdb_room_part_stairwayr_7          // ^
+//          ovdb_room_part_stairwayr_8          // ^
+//      ovdb_room_part_statue               // Just variants for statue
+//          ovdb_room_part_statue_1             // Statue of a ruler, a human lord
+//          ovdb_room_part_statue_2             // Statue of a ruler, a dwarf lord
+//          ovdb_room_part_statue_3             // Statue of an angel
+//          ovdb_room_part_statue_4             // Broken, unrecognisable statue, quartz
+//          ovdb_room_part_statue_5             // Broken, unrecognisable statue with enormous amethyst crystals growing out from within the stand
+//      ovdb_room_part_throne_rooml         // Just variants for throne room parts in core rooms (left half)
+//          ovdb_room_part_throne_rooml_1       // Pillar, tidy throne half, tidy floor, path piece
+//          ovdb_room_part_throne_rooml_2       // Pillar, tidy throne half, damaged floor, path piece
+//          ovdb_room_part_throne_rooml_3       // No pillar, tidy throne half, two path pieces
+//          ovdb_room_part_throne_rooml_4       // No pillar, messy throne half, path piece, dining hall piece
+//          ovdb_room_part_throne_rooml_5       // Pillar, intact throne half, overgrowth everywhere, no pieces
+//          ovdb_room_part_throne_rooml_6       // Broken pillar, broken throne half, fallen floor
+//          ovdb_room_part_throne_rooml_7       // Pillar, intact throne half, cobweb infestation
+//          ovdb_room_part_throne_rooml_8       // Pillar, intact throne half, extra pillar
+//      ovdb_room_part_throne_roomr         // Just variants for throne room parts in core rooms (right half)
+//          ovdb_room_part_throne_roomr_1       // ^
+//          ovdb_room_part_throne_roomr_2       // ^
+//          ovdb_room_part_throne_roomr_3       // ^
+//          ovdb_room_part_throne_roomr_4       // ^
+//          ovdb_room_part_throne_roomr_5       // ^
+//          ovdb_room_part_throne_roomr_6       // ^
+//          ovdb_room_part_throne_roomr_7       // ^
+//          ovdb_room_part_throne_roomr_8       // ^
+//      ovdb_room_part_treasury             // Just variants for the boss room treasure chambers, all of these being piles that spawn regardless of the room chosen
+//          ovdb_room_part_treasury_1           // Cobwebs, ovdb_feature_spawner
+//          ovdb_room_part_treasury_2           // Leaves, ovdb_feature_treasure_1
+//          ovdb_room_part_treasury_3           // Hay bales, ovdb_feature_treasure_2
+//          ovdb_room_part_treasury_4           // Brewing stand, ovdb_feature_treasure_3
+//          ovdb_room_part_treasury_5           // ovdb_feature_treasure_1 & ovdb_feature_treasure_2
+//          ovdb_room_part_treasury_6           // Leaves, 1 iron block
+//          ovdb_room_part_treasury_7           // Iron blocks, ovdb_feature_treasure_1
+//          ovdb_room_part_treasury_8           // Diamond block, singular
+//          ovdb_room_part_treasury_9           // Gold blocks
+//          ovdb_room_part_treasury_10          // Emerald blocks & iron blocks
+//          ovdb_room_part_treasury_11          // Bookshelves (sacred books)
+//          ovdb_room_part_treasury_12          // ovdb_feature_miniboss, diamond blocks
+//          ovdb_room_part_treasury_13          // Gold & emerald blocks
+//          ovdb_room_part_treasury_14          // Iron blocks & 1 diamond block
+//          ovdb_room_part_treasury_15          // ovdb_feature_treasure_1 & ovdb_feature_treasure_3
+//          ovdb_room_part_treasury_16          // ovdb_feature_treasure_2 & ovdb_feature_treasure_3
 //      ovdb_wall                           // Walls, to block off dead ends tidily
 //          ovdb_wall_1                         // Flat stone wall (here & in ovdb_path)
 //          ovdb_wall_2                         // Caved in wall (here & in ovdb_path)
-//      ovdb_room_dungeon_sl                // Dungeon stairway (left)
-//          ovdb_room_dungeon_sl_1              // Simple tidy stairway
-//          ovdb_room_dungeon_sl_2              // Messy overgrown stairway
-//          ovdb_room_dungeon_sl_3              // Cobweb infested stairway
-//          ovdb_room_dungeon_sl_4              // Cobweb infested broken stairway
-//          ovdb_room_dungeon_sl_5              // Overgrown broken stairway
-//          ovdb_room_dungeon_sl_6              // Tidy stairway with only two paths left and right
-//          ovdb_room_dungeon_sl_7              // Overgrown stairway with only two paths left and right
-//          ovdb_room_dungeon_sl_8              // Overgrown stairway with four paths
-//      ovdb_room_dungeon_sr                // Dungeon stairway (right)
-//          ovdb_room_dungeon_sr_1              // ^
-//          ovdb_room_dungeon_sr_2              // ^
-//          ovdb_room_dungeon_sr_3              // ^
-//          ovdb_room_dungeon_sr_4              // ^
-//          ovdb_room_dungeon_sr_5              // ^
-//          ovdb_room_dungeon_sr_6              // ^
-//          ovdb_room_dungeon_sr_7              // ^
-//          ovdb_room_dungeon_sr_8              // ^
-//      ovdb_room_dungeon                   // Giant and long rooms in the dungeons to give the impression of variety
-//          ovdb_room_dungeon_1                 // Longest tunnel (48x7), overgrown, at least 16 connections bridging off on either side and at the end
-//          ovdb_room_dungeon_2                 // Longest tunnel (48x7), very broken, at least 16 connections bridging off on either side and at the end
-//          ovdb_room_dungeon_3                 // Long tunnel (36x7x6), has burial crypts on the sides, 8 total connections
-//          ovdb_room_dungeon_4                 // Long tunnel (36x7x6), very overgrown and cobwebs with burial crypts and 8 total connections
-//          ovdb_room_dungeon_5                 // Long tunnel (36x7x6), very overgrown, cobwebs, several parts with lava in the floor, broken, 8 total connections
-//          ovdb_room_dungeon_6                 // Long tunnel (36x7x6), very overgrown, cobwebs, several parts with water in the floor, 8 total connections
-//          ovdb_room_dungeon_7                 // Big underground catacomb room (48x48x6), include statue in middle, lots of rows of crypts blocking line of sight
-//          ovdb_room_dungeon_8                 // ^ Overgrown and broken
-//          ovdb_room_dungeon_9                 // Long room with prison cells on one side and catacombs the other (36x13x6)
-//          ovdb_room_dungeon_10                // Prison cells on both sides of a long room (36x17x6)
 
+// overhauledstructures:
+//  overhauleddungeonspiders/
+//      ovds_core                       // The starting core piece, a connected network of sewer tunnels, enormous, tall, piece
+//          ovds_core_1                     // Eight corners split up the room, each with four potential exits, and half of four others which are split down the middle in every direction, for anywhere from 8 to 24 connected sewer exits, all coalescing together here with a lake at the bottom and a giant spider web of chaos in the center hanging over everything with the boss spider and features inside the cocoon, beneath the lake being the arcane room
+//      ovds_core_arcane                // The core piece right beneath the starting core, which has the Evoker's home within, smaller, shorter piece
+//          ovds_core_arcane_1              // Cosy library of sorts split into four random corners, with many more libraries and tables on the edges, a brewing lab in the center with the Evoker, and no physical entrance to any other part of the dungeon, spawning beneath it hidden, with the most loot in the dungeon, and a lot of pieces sourced from OverhauledDungeonBasic
+//      ovds_feature                    // Barrels, minibosses and spawners randomised in key locations
+//          ovds_feature_barrels_1          // -
+//          ovds_feature_barrels_2          // -
+//          ovds_feature_barrels_3          // -
+//          ovds_feature_barrels_4          // (1 again)
+//          ovds_feature_barrels_5          // (2 again)
+//          ovds_feature_barrels_6          // (3 again)
+//          ovds_feature_miniboss_1         // -
+//          ovds_feature_miniboss_2         // -
+//          ovds_feature_miniboss_3         // -
+//          ovds_feature_miniboss_4         // -
+//          ovds_feature_miniboss_5         // -
+//          ovds_feature_miniboss_6         // -
+//          ovds_feature_spawner_1          // -
+//          ovds_feature_spawner_2          // -
+//          ovds_feature_spawner_3          // -
+//          ovds_feature_spawner_4          // -
+//          ovds_feature_spawner_5          // (1 again)
+//          ovds_feature_spawner_6          // (2 again)
+//          ovds_feature_spawner_7          // (3 again)
+//          ovds_feature_spawner_8          // (4 again)
+//      ovds_feature_barrels            // Rewards for the hard work, barrels of fun, often including specially made potions by the Evoker boss, and minerals from the spiders caving, with some random lost notes and journals of old adventurers
+//          ovds_feature_barrels_1          // Various lost adventurer items such as armour pieces, swords, food items, leads, pickaxes and other tools, compasses and clocks, lost notes and journals, a few minerals, cobwebs, white wool, rotten flesh, 'invisibility serum'
+//          ovds_feature_barrels_2          // Minerals; pure ore, non-smelted raw ingots, cobblestone, stone, obsidian, other stone variants, some diamonds, emeralds, redstone, lapis, a lot of cobwebs, 'strength serum', lost notes and journals, occasional random adventurer items
+//          ovds_feature_barrels_3          // Spider eyes, string, wool, stone, cobblestone, special potions of regeneration 'growth serum', occasional lost adventurer weapons, fishing rods, fish, some spawn eggs (named experimental test subject concoctions)
+//      ovds_feature_boss_e             // Evoker bosses, within the core arcane room, each with their own special effects
+//          ovds_feature_boss_e_1           // "Rath Ruln", very speedy, very jumpy, high absorption, 60 HP
+//          ovds_feature_boss_e_2           // "Ach Toran", invisible, much stronger, high absorption, 60 HP
+//          ovds_feature_boss_e_3           // "Blut Patho", very speedy, very jumpy, much stronger, 60 HP
+//      ovds_feature_boss_s             // Spider bosses, within the core room, each with their own special effects
+//          ovds_feature_boss_s_1           // "Tog", speedy, jumpy, invisible, stronger, absorption, 100 HP
+//          ovds_feature_boss_s_2           // "Maverclick", speedy, jumpy, invisible, stronger, absorption, 100 HP
+//          ovds_feature_boss_s_3           // "Grawl", speedy, jumpy, invisible, stronger, absorption, 100 HP
+//      ovds_feature_miniboss           // Spider minibosses, each with their own special effects
+//          ovds_feature_miniboss_1         // "Ag", speedy, jumpy, invisible, 60 HP
+//          ovds_feature_miniboss_2         // "Pitt", invisible, stronger, slower, 60 HP
+//          ovds_feature_miniboss_3         // "Sab", speedy, jumpy, stronger, 60 HP
+//          ovds_feature_miniboss_4         // "Chitter", absorption, jumpy, speedy, 60 HP
+//          ovds_feature_miniboss_5         // "Clawn", slower, stronger, absorption, glowing, 60 HP
+//          ovds_feature_miniboss_6         // "Onx", slowest, strongest, glowing, 60 HP
+//      ovds_feature_spawner            // Spider spawners, each with their own special effects
+//          ovds_feature_spawner_1          // Speedy, jumpy spiders
+//          ovds_feature_spawner_2          // Invisible spiders
+//          ovds_feature_spawner_3          // Slower, stronger spiders
+//          ovds_feature_spawner_4          // Glowing, absorption spiders
+//      ovds_path                       // Pieces which generate tunnels connecting the core and rooms, creating the feel of a sewer tunnel network
+//          ovds_path_1                     // Sewer tunnel, straight, longest, thin, one flow, low, couple exit points
+//          ovds_path_2                     // Sewer tunnel, straight, longest, wide, one flow, low, couple exit points
+//          ovds_path_3                     // Sewer tunnel, curved, short, thin, one flow, low, few exit points
+//          ovds_path_4                     // Sewer tunnel, right angle, short, thin, one flow, low, few exit points
+//          ovds_path_5                     // Sewer tunnel, left right angle, short, thin, one flow, low, few exit points
+//          ovds_path_6                     // Sewer tunnel, left&right three way, short, thin, split one flow, mid, few exit points
+//          ovds_path_7                     // Sewer tunnel, four way, short, thin, split one flow, mid, few exit points
+//          ovds_path_8                     // Sewer tunnel, sloped straight, long, wide, one flow, low, couple exit points
+//          ovds_path_9                     // Sewer tunnel, drop down, short, thin, one flow down, tallest, several exit points
+//          ovds_path_10                    // Sewer tunnel, criss-cross beneath and above, short, thin & wide, two separate flows, tall, few exit points
+//          ovds_path_11                    // Sewer tunnel, straight, short, wide, one flow, low, few exit points
+//          ovds_path_12                    // Sewer tunnel, criss-cross beneath and above different, short, wide & thin, two separate flows, tall, few exit points
+//          ovds_path_13                    // Sewer tunnel, aqueduct with arches over a lake below, long, thin, one flow, tall, few exit points
+//          ovds_path_14                    // Sewer tunnel, broken aqueduct for parkour over a lake below, long, thin, one flow, tall, few exit points
+//          ovds_path_15                    // Sewer tunnel, straight with gates, long, thin, one flow, low, couple exit points
+//          ovds_path_16                    // Sewer tunnel, straight with gates, short, wide, one flow, low, few exit points
+//          ovds_path_17                    // Sewer tunnel, wider straight with gates, long, wide, one flow, low, couple exit points
+//          ovds_path_18                    // Sewer tunnel, wider straight with gates, long, thin, two flows side by side, couple exit points
+//          ovds_path_19                    // Sewer tunnel, straight thin, long, thin, one flow, low, couple exit points
+//          ovds_path_20                    // Sewer tunnel, four way with gates, short, wide, split one flow, mid, few exit points
+//      ovds_room                       // Pieces which generate major rooms for the dungeon, each capable of spawning eight subsections changing room layouts
+//          ovds_room_1                     // Sewer tunnel hub, parallel aqueducts, long, two parallel flows, tall, several exit points
+//          ovds_room_2                     // Sewer tunnel hub, broken with central lake, long, many dead flows, tall, several exit points
+//          ovds_room_3                     // Broken dead-end sewer tunnel, spider cave
+//          ovds_room_4                     //
+//          ovds_room_5                     //
+//          ovds_room_6                     //
+//          ovds_room_7                     //
+//          ovds_room_8                     //
+//          ovds_room_9                     //
+//          ovds_room_10                    //
+//          ovds_room_11                    //
+//          ovds_room_12                    //
+//      ovds_room_hidden                //
+//          ovds_room-hidden_1              // Previous explorer hideaway, small base, dining hall m, bedroom
+//          ovds_room-hidden_2              // Previous explorer hideaway, large base, dining hall m, guard room,
+//          ovds_room-hidden_3              // Previous explorer hideaway, empty
+//          ovds_room-hidden_4              // Mini cavern of spiders
+//          ovds_room-hidden_5              //
+//          ovds_room-hidden_6              //
+//          ovds_room-hidden_7              //
+//          ovds_room-hidden_8              //
+//          ovds_room-hidden_9              //
+//          ovds_room-hidden_10             //
+//      ovds_room_part_bridge           // Pieces which generate various qualities of bridges over water, using minimal space to add some extra life to scenes, also varies up the water beneath it though
+//          ovds_room_part_bridge_1         // Intact, mini bridge, spruce, webbed
+//          ovds_room_part_bridge_2         // Broken mini bridge, spruce, overgrown
+//          ovds_room_part_bridge_3         // Intact, mini bridge, dark oak, tidy
+//          ovds_room_part_bridge_4         // Intact, one-wide bridge, dark oak, tidy
+//          ovds_room_part_bridge_5         // Broken, mini bridge, dark oak, webbed
+//          ovds_room_part_bridge_6         // Broken, mini bridge, dark oak, overgrown
+//          ovds_room_part_bridge_7         // Broken, mini bridge, spruce, webbed
+//          ovds_room_part_bridge_8         // Broken, medium bridge, warped, overgrown
+//          ovds_room_part_bridge_9         // Broken, mini bridge, warped, overgrown
+//          ovds_room_part_bridge_10        // Intact, mini bridge, warped, tidy
+//      ovds_room_part_ceiling          //
+//          ovds_room_part_ceiling_1        //
+//      ovds_room_part_core             //
+//          ovds_room_part_core_1           //
+//      ovds_room_part_core_arcane      // Parts that split up the Evoker library room beneath the main core room of the dungeon
+//          ovds_room_part_core_arcane_1    // Cosy area to prepare food and eat: Pantry & Dining Hall pieces
+//          ovds_room_part_core_arcane_2    // Cosy area to sleep and sit: Bedroom & Dining Hall pieces
+//          ovds_room_part_core_arcane_3    // Cosy area for others to rest: Guard Room & 2 Path pieces
+//          ovds_room_part_core_arcane_4    // Cosy area for reading and studying: Library & Dining Hall pieces
+//          ovds_room_part_core_arcane_5    // Cosy area for sitting and eating: 2 Dining Hall pieces
+//          ovds_room_part_core_arcane_6    // Cosy area for reading and studying: Library & 2 Dining Hall M pieces
+//          ovds_room_part_core_arcane_7    // Cosy area for documenting history: 2 Library pieces
+//          ovds_room_part_core_arcane_8    // Cosy area for food prep and sitting: 2 Pantry pieces
+//          ovds_room_part_core_arcane_9    // Cosy area for any relaxing sitting around: 2 Living Room pieces
+//          ovds_room_part_core_arcane_10   // Cosy area with displays and seats: Display Room & Dining Hall
+//      ovds_room_part_gates            //
+//          ovds_room_part_gates_1          //
+//      ovds_room_part_ground           //
+//          ovds_room_part_ground_1         //
+//      ovds_room_part_growth           //
+//          ovds_room_part_growth_1         //
+//      ovds_room_part_hanging          //
+//          ovds_room_part_hanging_1        //
+//		ovds_room_part_pipes            // Wall parts, 4(l)x11(h)x11(w), pipe entrances on walls
+//          ovds_room_part_pipes_1          // Red/blue sewer, full gate, no leak
+//          ovds_room_part_pipes_2          // Red/blue sewer, part gate, mini leak
+//          ovds_room_part_pipes_3          // Red/blue sewer, split gate, no leak
+//          ovds_room_part_pipes_4          // Just a wall
+//          ovds_room_part_pipes_5          // Red/blue sewer, no gate, big leak
+//          ovds_room_part_pipes_6          // Blue sewer, full gate, no leak
+//          ovds_room_part_pipes_7          // Blue sewer, part gate, larger leak
+//          ovds_room_part_pipes_8          // Red/blue sewer, mini gate, huge leak
+//          ovds_room_part_pipes_9          // Blue sewer, full gate, no leak
+//          ovds_room_part_pipes_10         // Blue sewer, broken, big leak
+//      ovds_room_part_water            // 5x3x3 Parts that randomise the appearance of water, filling it with plantlife, making the water unstable, filling it with debris, leaving it empty, lilypads, etc
+//          ovds_room_part_water_1          // Clear water, minimal reeds, no lilies
+//          ovds_room_part_water_2          // Clear water, many reeds, no lilies
+//          ovds_room_part_water_3          // Cobble debris in water, many reeds, no lilies
+//          ovds_room_part_water_4          // Cobble debris in water, many reeds, lilies
+//          ovds_room_part_water_5          // Overgrowth in water, many reeds, lilies
+//          ovds_room_part_water_6          // Clear water, minimal reeds, lilies
+//          ovds_room_part_water_7          // Clear water, reeds reaching high, no lilies
+//          ovds_room_part_water_8          // Flowing water, no reeds, no lilies
+//          ovds_room_part_water_9          // Spruce debris in water, minimal reeds, no lilies
+//          ovds_room_part_water_10         // Dark oak debris in water, minimal reeds, lilies
+//          ovds_room_part_water_11         // Warped debris in water, minimal reeds, lilies
+//          ovds_room_part_water_12         // Clear water, no reeds, lilies
+//          ovds_room_part_water_13         // Clear water, many reeds, lilies
+//          ovds_room_part_water_14         // Overgrowth in water, no reeds, lilies
+//          ovds_room_part_water_15         // Warped debris in water, minimal reeds, no lilies
+//          ovds_room_part_water_16         // Dark oak debris in water, no reeds, no lilies
+//          ovds_room_part_water_17         // Spruce & overgrowth in water, no reeds, no lilies
+//          ovds_room_part_water_18         // Iron bars in water, no reeds, no lilies
+//          ovds_room_part_water_19         // Clear water, minimal reeds, no lilies
+//          ovds_room_part_water_20         // Clear water, minimal reeds, lilies
+//      ovds_room_part_water_m          // 5x3x1 Parts that randomise the appearance of water like their larger counterparts, doing roughly the same thing
+//          ovds_room_part_water_m_1        // Clear water, minimal reeds, no lilies
+//          ovds_room_part_water_m_2        // Clear water, many reeds, no lilies
+//          ovds_room_part_water_m_3        // Cobble debris in water, many reeds, no lilies
+//          ovds_room_part_water_m_4        // Cobble debris in water, many reeds, lilies
+//          ovds_room_part_water_m_5        // Overgrowth in water, many reeds, lilies
+//          ovds_room_part_water_m_6        // Clear water, minimal reeds, lilies
+//          ovds_room_part_water_m_7        // Clear water, reeds reaching high, no lilies
+//          ovds_room_part_water_m_8        // Flowing water, no reeds, no lilies
+//          ovds_room_part_water_m_9        // Spruce debris in water, minimal reeds, no lilies
+//          ovds_room_part_water_m_10       // Dark oak debris in water, minimal reeds, lilies
+//          ovds_room_part_water_m_11       // Warped debris in water, minimal reeds, lilies
+//          ovds_room_part_water_m_12       // Clear water, no reeds, lilies
+//          ovds_room_part_water_m_13       // Clear water, many reeds, lilies
+//          ovds_room_part_water_m_14       // Overgrowth in water, no reeds, lilies
+//          ovds_room_part_water_m_15       // Warped debris in water, minimal reeds, no lilies
+//          ovds_room_part_water_m_16       // Dark oak debris in water, no reeds, no lilies
+//          ovds_room_part_water_m_17       // Spruce & overgrowth in water, no reeds, no lilies
+//          ovds_room_part_water_m_18       // Iron bars in water, no reeds, no lilies
+//          ovds_room_part_water_m_19       // Clear water, minimal reeds, no lilies
+//          ovds_room_part_water_m_20       // Clear water, minimal reeds, lilies
+//      ovds_room_part_web              // 3x5x3 Parts that randomise the mess the spiders make, including webs and wool and sometimes spawners
+//          ovds_room_part_web_1            // Lots of webs, no overgrowth, no wool
+//          ovds_room_part_web_2            // Lots of webs, some overgrowth, no wool
+//          ovds_room_part_web_3            // Lots of webs, no overgrowth, some wool
+//          ovds_room_part_web_4            // Lots of webs, some overgrowth, some wool
+//          ovds_room_part_web_5            // Some webs, no overgrowth, some wool, spider spawner
+//          ovds_room_part_web_6            // Some webs, no overgrowth, lots of wool
+//          ovds_room_part_web_7            // Lots of webs, no overgrowth, lots of wool
+//          ovds_room_part_web_8            // Lots of webs, lots of overgrowth, lots of wool
+//          ovds_room_part_web_9            // Lots of webs, no overgrowth, lots of wool, barrel
+//          ovds_room_part_web_10           // Few webs, no overgrowth, no wool
+//      ovds_wall                       // Typical fallback pieces, dead-ends such as flat walls and collapsed paths
+//          ovds_wall_1                     // Wall, cobblestone
+//          ovds_wall_2                     // Wall, cobblestone
+//          ovds_wall_3                     // Wall, stone bricks
+//          ovds_wall_4                     // Collapsed path, cobblestone
+//          ovds_wall_5                     // Blocked path, gated, dead-end
+
+
+//      ovdb_core							1 v
+//      ovdb_core_boss_room					2 v
+//      ovdb_core_l3						5 v
+//      ovdb_core_l4						10 v
+//      ovdb_core_l5						10 v
+//      ovdb_core_l6						5 v
+//      ovdb_core_treasury					2 v
+//      ovdb_feature						9 v
+//      ovdb_feature_boss					6 v
+//      ovdb_feature_danger					6 v
+//      ovdb_feature_miniboss				3 v
+//      ovdb_feature_spawner				3 v
+//      ovdb_feature_treasure				3 v
+//      ovdb_path							13 v
+//      ovdb_room							30 v
+//      ovdb_room_dungeon					10 v
+//      ovdb_room_dungeon_sl				8 v
+//      ovdb_room_dungeon_sr				8 v
+//      ovdb_room_part_armoury				8 v
+//      ovdb_room_part_bedrooms				15 v
+//      ovdb_room_part_bedroomsl			8 v
+//      ovdb_room_part_bedroomsr			8 v
+//      ovdb_room_part_coliseum				8 v
+//      ovdb_room_part_dining_hall			10 v
+//      ovdb_room_part_dining_hall_m		10 v
+//      ovdb_room_part_dining_room			10 v
+//      ovdb_room_part_dining_room_m		10 v
+//      ovdb_room_part_display_room			16 v
+//      ovdb_room_part_entrance_hall_l1l	8 v
+//      ovdb_room_part_entrance_hall_l1r	8 v
+//      ovdb_room_part_entrance_hall_l1sl	8 v
+//      ovdb_room_part_entrance_hall_l1sr	8 v
+//      ovdb_room_part_entrance_hall_l2l	8 v
+//      ovdb_room_part_entrance_hall_l2r	8 v
+//      ovdb_room_part_garden				16 v
+//      ovdb_room_part_guard_room			8 v
+//      ovdb_room_part_library				10 v
+//      ovdb_room_part_libraryl				8 v
+//      ovdb_room_part_libraryr				8 v
+//      ovdb_room_part_living_quarters		10 v
+//      ovdb_room_part_pantry				8 v
+//      ovdb_room_part_parkour				10 v
+//      ovdb_room_part_parkour_drop			5 v
+//      ovdb_room_part_paths				30 v
+//      ovdb_room_part_prayer_hall			8 v
+//      ovdb_room_part_prison				10 v
+//      ovdb_room_part_prison_m				10 v
+//      ovdb_room_part_prisonl				8 v
+//      ovdb_room_part_prisonr				8 v
+//      ovdb_room_part_sbedroom				8 v
+//      ovdb_room_part_stairway				8 v
+//      ovdb_room_part_stairwayr			8 v
+//      ovdb_room_part_stairwayr			8 v
+//      ovdb_room_part_statue				5 v
+//      ovdb_room_part_throne_roomr			8 v
+//      ovdb_room_part_throne_rooml			8 v
+//      ovdb_room_part_treasury				16 v
+//      ovdb_wall							2 v
+
+//      0: Core L1+2
+//      1: Core L3 & Core L1+2 Parts & Paths
+//      2: Core L4 & Core L3 Parts & Path Parts & Rooms
+//      3: Core L5 & Core L4 Parts & Room Parts & Paths
+//      4: Core L6 & Core L5 Parts & Path Parts & Rooms
+//      5: Dungeon L7 Stairs & Core L6 Parts & Boss Room & Room Parts & Paths
+//      6: Dungeon Tunnels & Treasure Room & Boss Room Parts & Path Parts & Rooms
+//      7: Dungeon Tunnels & Treasure Room Parts & Room Parts & Paths
+//      F: Path Parts & Walls
+
+//      ovds_core
+//      ovds_core_arcane
+//      ovds_core_part_corner
+//      ovds_core_part_web
+//      ovds_feature
+//      ovds_feature_boss_e
+//      ovds_feature_boss_s
+//      ovds_feature_chests
+//      ovds_feature_miniboss
+//      ovds_feature_spawner
+//      ovds_path
+//      ovds_path_t
+//      ovds_path_t_m
+//      ovds_path_t_s
+//      ovds_room
+//      ovds_room_hidden
+//      ovds_room_part_bridge
+//      ovds_room_part_ceiling
+//      ovds_room_part_core_arcane
+//      ovds_room_part_gates
+//      ovds_room_part_ground
+//      ovds_room_part_growth
+//      ovds_room_part_hanging
+//		ovds_room_part_pipes
+//      ovds_room_part_pipes_d
+//      ovds_room_part_wall
+//      ovds_room_part_water
+//      ovds_room_part_web
+//      ovds_wall
+
+//      0: Core Base
+//      1: Core Web Parts & Core Arcane
+//      2: Core Web Part Parts & Core Corner Parts & Core Arcane Parts
+//      3: Core Room Wall Parts & Core Room Pipes Parts & Tunnels
+//      4: Tunnel Parts & Rooms
+//      5: Room Parts & Tunnels
+//      6: Tunnel Parts & Rooms
+//      7: Room Parts & Tunnels
+//      F: Tunnel Parts & Walls
 
 // Code Notes:
 // "step": "LAKES, LOCAL_MODIFICATIONS, RAW_GENERATION, STRONGHOLDS, SURFACE_STRUCTURES, TOP_LAYER_MODIFICATION, UNDERGROUND_DECORATION, UNDERGROUND_ORES, UNDERGROUND_STRUCTURES, VEGETAL_DECORATION"

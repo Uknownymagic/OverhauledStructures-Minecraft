@@ -1,0 +1,569 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:cobweb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:amethyst_cluster",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:amethyst_block"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:amethyst_cluster",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:amethyst_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 24
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:budding_amethyst",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:amethyst_block",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:amethyst_cluster",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:amethyst_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 24
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:budding_amethyst",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:gold_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 8,
+          "name": "minecraft:cobweb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 24
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionColor:16463335,CustomPotionEffects:[{Id:10,Duration:600,Amplifier:5,Ambient:1b},{Id:6,Duration:5,Amplifier:5,Ambient:1b}],display:{Name:'[\"\",{\"text\":\"Serum of Life\",\"italic\":false,\"bold\":true,\"color\":\"dark_purple\"}]',Lore:['[\"We were right.\"]','[\"Everything we researched...\"]','[\"Lost limbs can be regenerated.\"]','[\"Even death itself...\"]','[\"Immortality is possible.\"]']}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:diamond_helmet",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 0,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:iron_helmet",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 0,
+                "max": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:iron_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 0,
+                "max": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:iron_leggings",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 0,
+                "max": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:iron_boots",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 0,
+                "max": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:diamond_boots",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 0,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:iron_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 14
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 16
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:amethyst_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 6
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"Stop the experiments.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"It escaped.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"We made it too powerful.\",\"italic\":false,\"color\":\"white\"}]']}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"To my people, rejoice.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"We have secured our victory over life and death.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Starvation, suffering, pain.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"We defeated it all.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"We will be the first to never die.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Attend the royal banquet at the castle, in one week\\'s time.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"You are all invited, citizens of my kingdom.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Defenders of my castle.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"I thank you for taking this step with me.\",\"italic\":false,\"color\":\"white\"}]']}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"We made a breakthrough.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Our subject grew.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"We need a bigger cell.\",\"italic\":false,\"color\":\"white\"}]']}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"The world\\'s stranger than I thought.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Stranger than any of us thought.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Dwarves, elves... We knew that.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"But angels?\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"They have flying cities. Sky cities.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Cloud empires.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"A trader was telling me all about it.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Said they had been to one.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Had minerals I had never seen before.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Found a... flying ship?\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"We have to look into this.\",\"italic\":false,\"color\":\"white\"}]']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

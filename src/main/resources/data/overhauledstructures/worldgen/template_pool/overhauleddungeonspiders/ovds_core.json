@@ -1,11 +1,11 @@
 {
   "name": "overhauledstructures:overhauleddungeonspiders/ovds_core",
-  "fallback": "overhauledstructures:overhauleddungeonspiders/ovds_wall",
+  "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovds_core_1",
+        "location": "overhauledstructures:ovds/ovds_core_1",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
