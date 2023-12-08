@@ -822,28 +822,42 @@
 //      ovds_feature_spawner
 //      ovds_path
 //      ovds_path_t
+//      ovds_path_t_d
 //      ovds_path_t_m
 //      ovds_path_t_s
+//      ovds_path_t_t
+//      ovds_path_t_tm
 //      ovds_room
 //      ovds_room_hidden
-//      ovds_room_part_bridge
-//      ovds_room_part_ceiling
 //      ovds_room_part_core_arcane
 //      ovds_room_part_gates
-//      ovds_room_part_ground
-//      ovds_room_part_growth
-//      ovds_room_part_hanging
+//      ovds_room_part_ground_l3
+//      ovds_room_part_ground_l5
+//      ovds_room_part_ground_s3
+//      ovds_room_part_ground_s5
+//      ovds_room_part_hanging_l3
+//      ovds_room_part_hanging_l5
+//      ovds_room_part_hanging_s3
+//      ovds_room_part_hanging_s5
 //		ovds_room_part_pipes
 //      ovds_room_part_pipes_d
+//      ovds_room_part_podium
+//      ovds_room_part_rock
+//      ovds_room_part_rock_c
 //      ovds_room_part_wall
-//      ovds_room_part_water
+//      ovds_room_part_wall_c
+//      ovds_room_part_wall_m2
+//      ovds_room_part_wall_m3
+//      ovds_room_part_water_l3
+//      ovds_room_part_water_l5
+//      ovds_room_part_water_s3
 //      ovds_room_part_web
 //      ovds_wall
 
 //      0: Core Base
-//      1: Core Web Parts & Core Arcane
-//      2: Core Web Part Parts & Core Corner Parts & Core Arcane Parts
-//      3: Core Room Wall Parts & Core Room Pipes Parts & Tunnels
+//      1: Core Web Parts & Core Arcane & Tunnels
+//      2: Core Web Part Parts & Core Corner Parts & Core Arcane Parts & Tunnel Parts & Rooms
+//      3: Core Room Wall Parts & Core Room Pipes Parts & Room Parts & Tunnels
 //      4: Tunnel Parts & Rooms
 //      5: Room Parts & Tunnels
 //      6: Tunnel Parts & Rooms

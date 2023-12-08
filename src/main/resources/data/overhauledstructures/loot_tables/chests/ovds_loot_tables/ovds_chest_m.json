@@ -177,7 +177,7 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "minecraft:web",
+          "name": "minecraft:cobweb",
           "functions": [
             {
               "function": "minecraft:set_count",
