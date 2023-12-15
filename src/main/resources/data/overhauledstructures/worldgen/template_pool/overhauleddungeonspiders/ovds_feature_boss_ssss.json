@@ -1,0 +1,15 @@
+{
+  "name": "overhauledstructures:overhauleddungeonspiders/ovds_feature_boss_ssss",
+  "fallback": "overhauledstructures:overhauleddungeonspiders/ovds_feature_boss_ssss",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "overhauledstructures:ovds/ovds_feature_boss_ssss_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

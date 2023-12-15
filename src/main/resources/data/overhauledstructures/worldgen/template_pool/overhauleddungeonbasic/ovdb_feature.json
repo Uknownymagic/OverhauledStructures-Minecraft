@@ -5,24 +5,6 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb/ovdb_feature_11",
-        "processors": "minecraft:empty",
-        "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 5,
-      "element": {
-        "location": "overhauledstructures:ovdb/ovdb_feature_12",
-        "processors": "minecraft:empty",
-        "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 5,
-      "element": {
         "location": "overhauledstructures:ovdb/ovdb_feature_3",
         "processors": "minecraft:empty",
         "projection": "rigid",
@@ -86,7 +68,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb/ovdb_feature_18",
+        "location": "overhauledstructures:ovdb/ovdb_feature_11",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -95,7 +77,7 @@
     {
       "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovdb/ovdb_feature_19",
+        "location": "overhauledstructures:ovdb/ovdb_feature_12",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -141,6 +123,24 @@
       "weight": 5,
       "element": {
         "location": "overhauledstructures:ovdb/ovdb_feature_17",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "overhauledstructures:ovdb/ovdb_feature_18",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "overhauledstructures:ovdb/ovdb_feature_19",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

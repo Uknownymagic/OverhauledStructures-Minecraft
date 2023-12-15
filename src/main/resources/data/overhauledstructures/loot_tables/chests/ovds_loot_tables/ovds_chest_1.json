@@ -6,10 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:wither_rose"
-        },
-        {
-          "type": "minecraft:item",
+          "weight": 5,
           "name": "minecraft:cobweb",
           "functions": [
             {
@@ -29,35 +26,19 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:paper",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"I am excited to see you again.\",\"italic\":true,\"color\":\"white\"}]','[{\"text\":\"The castle has us protecting something.\",\"italic\":true,\"color\":\"white\"}]','[{\"text\":\"I\\'ll be back soon.\",\"italic\":true,\"color\":\"white\"}]','[{\"text\":\"I miss you.\",\"italic\":true,\"color\":\"white\"}]']}}"
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.9
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
+          "weight": 5,
           "name": "minecraft:string",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2,
-                "max": 12
+                "min": 4,
+                "max": 16
               },
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.7
+                  "chance": 0.5
                 }
               ]
             }
@@ -65,32 +46,14 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:bow",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 0,
-                "max": 4
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.2
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:spider_eye",
+          "weight": 5,
+          "name": "minecraft:bone",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1,
-                "max": 6
+                "min": 4,
+                "max": 16
               },
               "conditions": [
                 {
@@ -104,10 +67,36 @@
       ]
     },
     {
-      "rolls": 2,
+      "rolls": 3,
       "entries": [
         {
           "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:lantern"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:string",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
           "name": "minecraft:cobweb",
           "functions": [
             {
@@ -127,7 +116,198 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:string",
+          "weight": 1,
+          "name": "minecraft:chain",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:iron_bars",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:chain",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:cobweb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 24
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:lantern",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:redstone_block",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:iron_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 12
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 8,
+          "name": "minecraft:cobweb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 24
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:lead",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -146,7 +326,28 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:chainmail_leggings",
+          "weight": 2,
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 0,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:diamond_pickaxe",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -165,7 +366,8 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:chainmail_boots",
+          "weight": 1,
+          "name": "minecraft:golden_pickaxe",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -184,13 +386,14 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:chainmail_chestplate",
+          "weight": 1,
+          "name": "minecraft:diamond_pickaxe",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 0,
-                "max": 4
+                "max": 16
               },
               "conditions": [
                 {
@@ -203,7 +406,28 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 4,
           "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 0,
+                "max": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:iron_sword",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -242,8 +466,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1,
-                "max": 3
+                "min": 3,
+                "max": 7
               }
             }
           ]
@@ -273,6 +497,132 @@
                 "min": 12,
                 "max": 16
               }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:apple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:pumpkin_pie",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:clock"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:compass"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:recovery_compass"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionColor:5428223,CustomPotionEffects:[{Id:14,Duration:24000,Amplifier:1},{Id:7,Duration:2,Amplifier:2}],display:{Name:'[\"\",{\"text\":\"Serum of Invisibility\",\"bold\":true,\"color\":\"aqua\"}]',Lore:['[\"\",{\"text\":\"Reality is subjective.\",\"italic\":false,\"color\":\"aqua\"}]','[\"\",{\"text\":\"Reflective, refractive;\",\"italic\":false,\"color\":\"aqua\"}]','[\"\",{\"text\":\"reduced to glass.\",\"italic\":false,\"color\":\"aqua\"}]','[\"\",{\"text\":\"Partial is enough.\",\"italic\":false,\"color\":\"aqua\"}]']}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:cobweb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 6
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Lost Note\",\"italic\":true,\"bold\":true,\"color\":\"aqua\"}]',Lore:['[{\"text\":\"Complete this tunnel for a pay raise.\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"Double pay for the year, +20% for future years.\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"The city is counting on you.\",\"italic\":false,\"color\":\"aqua\"}]']}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Lost Journal\",\"italic\":true,\"bold\":true,\"color\":\"aqua\"}]',Lore:['[{\"text\":\"I heard laughter.\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"A person\\'s voice, echoing, \",\"italic\":false,\"color\":\"aqua\"},{\"text\":\"laughing\",\"italic\":true},{\"text\":\".\",\"italic\":false}]','[{\"text\":\"I screamed, they laughed, I cried, and they laughed more.\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"Am I losing it?\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"Can they hear me even now?\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"Can you?\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"Can you read what I\\'m writing?\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"Am I going mad?\",\"italic\":false,\"color\":\"aqua\"}]']}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Lost Journal\",\"italic\":true,\"bold\":true,\"color\":\"aqua\"}]',Lore:['[{\"text\":\"I found this... potion.\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"I\\'ve been hurt too much already.\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"I don\\'t have the luxury to be picky anymore.\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"I\\'m writing this in case of the worst.\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"I think I\\'ll drink it.\",\"italic\":false,\"color\":\"aqua\"}]']}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Lost Note\",\"italic\":true,\"bold\":true,\"color\":\"aqua\"}]',Lore:['[{\"text\":\"Patching up the sewers should be an easy task.\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"You five should be more than enough.\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"We hired a mercenary to guard you.\",\"italic\":false,\"color\":\"aqua\"}]','[{\"text\":\"Robed, spellcaster, healer - you\\'ll be fine.\",\"italic\":false,\"color\":\"aqua\"}]']}}"
             }
           ]
         }

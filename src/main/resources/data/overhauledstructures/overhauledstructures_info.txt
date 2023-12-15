@@ -817,6 +817,8 @@
 //      ovds_feature
 //      ovds_feature_boss_e
 //      ovds_feature_boss_s
+//      ovds_feature_boss_ss
+//      ovds_feature_boss_sss
 //      ovds_feature_chests
 //      ovds_feature_miniboss
 //      ovds_feature_spawner
@@ -844,6 +846,8 @@
 //      ovds_room_part_podium
 //      ovds_room_part_rock
 //      ovds_room_part_rock_c
+//      ovds_room_part_rock_cd
+//      ovds_room_part_rock_d
 //      ovds_room_part_wall
 //      ovds_room_part_wall_c
 //      ovds_room_part_wall_m2
