@@ -7,6 +7,14 @@
     {
       "structure": "overhauledstructures:overhauleddungeonspiders",
       "weight": 1
+    },
+    {
+      "structure": "overhauledstructures:overhauledcitiesmedieval",
+      "weight": 1
+    },
+    {
+      "structure": "overhauledstructures:overhauledcitiesmedievaltavern",
+      "weight": 1
     }
   ],
   "placement": {
