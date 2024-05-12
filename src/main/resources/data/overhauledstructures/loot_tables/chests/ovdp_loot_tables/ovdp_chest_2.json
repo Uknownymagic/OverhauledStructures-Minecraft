@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "weight": 5,
-          "name": "minecraft:cobweb",
+          "name": "minecraft:rotten_flesh",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -27,7 +27,7 @@
         {
           "type": "minecraft:item",
           "weight": 5,
-          "name": "minecraft:amethyst_cluster",
+          "name": "minecraft:blaze_rod",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -48,6 +48,26 @@
           "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:rotten_flesh",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -72,12 +92,12 @@
         {
           "type": "minecraft:item",
           "weight": 5,
-          "name": "minecraft:amethyst_block"
+          "name": "minecraft:soul_lantern"
         },
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:amethyst_cluster",
+          "name": "minecraft:blaze_rod",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -97,7 +117,7 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "minecraft:amethyst_shard",
+          "name": "minecraft:rotten_flesh",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -117,7 +137,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:budding_amethyst",
+          "name": "minecraft:chain",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -142,7 +162,7 @@
         {
           "type": "minecraft:item",
           "weight": 5,
-          "name": "minecraft:amethyst_block",
+          "name": "minecraft:iron_bars",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -162,7 +182,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:amethyst_cluster",
+          "name": "minecraft:chain",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -182,7 +202,7 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "minecraft:amethyst_shard",
+          "name": "minecraft:rotten_flesh",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -202,7 +222,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:budding_amethyst",
+          "name": "minecraft:soul_lantern",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -222,13 +242,13 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:diamond",
+          "name": "minecraft:gold_ore",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2,
-                "max": 5
+                "min": 8,
+                "max": 15
               },
               "conditions": [
                 {
@@ -242,7 +262,27 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:netherite_ingot",
+          "name": "minecraft:raw_iron",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 12
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:raw_gold",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -262,13 +302,33 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:gold_ingot",
+          "name": "minecraft:quartz",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2,
-                "max": 8
+                "min": 1,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:magma_block",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
               },
               "conditions": [
                 {
@@ -287,7 +347,7 @@
         {
           "type": "minecraft:item",
           "weight": 8,
-          "name": "minecraft:cobweb",
+          "name": "minecraft:rotten_flesh",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -306,19 +366,28 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:potion",
+          "weight": 4,
+          "name": "minecraft:quartz_bricks",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomPotionColor:16463335,CustomPotionEffects:[{Id:10,Duration:600,Amplifier:5},{Id:6,Duration:5,Amplifier:5}],display:{Name:'[\"\",{\"text\":\"Serum of Life\",\"italic\":false,\"color\":\"dark_purple\",\"bold\":true}]',Lore:['[\"\",{\"text\":\"We were right.\",\"italic\":false,\"color\":\"dark_purple\"}]','[\"\",{\"text\":\"Everything we researched...\",\"italic\":false,\"color\":\"dark_purple\"}]','[\"\",{\"text\":\"Lost limbs can be regenerated.\",\"italic\":false,\"color\":\"dark_purple\"}]','[\"\",{\"text\":\"Even death itself...\",\"italic\":false,\"color\":\"dark_purple\"}]','[\"\",{\"text\":\"Immortality is possible.\",\"italic\":false,\"color\":\"dark_purple\"}]']}}"
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.9
+                }
+              ]
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:diamond_helmet",
+          "weight": 2,
+          "name": "minecraft:gold_axe",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -337,68 +406,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:iron_helmet",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 0,
-                "max": 4
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.6
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:iron_chestplate",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 0,
-                "max": 4
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.6
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:iron_leggings",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 0,
-                "max": 4
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.6
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:iron_boots",
+          "weight": 1,
+          "name": "minecraft:diamond_axe",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -418,7 +427,27 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:diamond_boots",
+          "name": "minecraft:diamond_shovel",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 0,
+                "max": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_shovel",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -437,8 +466,48 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 0,
+                "max": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 0,
+                "max": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "weight": 10,
-          "name": "minecraft:iron_ingot",
+          "name": "minecraft:raw_iron",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -452,7 +521,7 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "minecraft:emerald",
+          "name": "minecraft:magma_block",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -466,13 +535,13 @@
         {
           "type": "minecraft:item",
           "weight": 20,
-          "name": "minecraft:gold_nugget",
+          "name": "minecraft:obsidian",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 3,
-                "max": 16
+                "min": 1,
+                "max": 5
               }
             }
           ]
@@ -490,6 +559,45 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:quartz_pillar",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:quartz_block",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionColor:6904214,CustomPotionEffects:[{Id:16,Duration:24000,Amplifier:2},{Id:7,Duration:2,Amplifier:2}],display:{Name:'[\"\",{\"text\":\"Warden's Truth\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"Breweries of sentries,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"sourced from life itself.\",\"italic\":false,\"color\":\"red\"}]']}}"
+            }
+          ]
         }
       ]
     },
@@ -502,7 +610,7 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "minecraft:amethyst_shard",
+          "name": "minecraft:rotten_flesh",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -526,7 +634,29 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"Stop the experiments.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"It escaped.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"We made it too powerful.\",\"italic\":false,\"color\":\"white\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"The new prisoner is different.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The rest were fragile.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Short-lasting.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"This one holds a resilience-\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"No, a sentience, even.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"A mind of its own.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The others seem to obey it.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It's like they follow it.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We are considering using this.\",\"italic\":false,\"color\":\"red\"}]']}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"Do you remember Miller?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I don't.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I checked an old entry.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It mentioned a sentry here.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Miller.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Did something happen to them?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It said I was their friend.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Am I losing it?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Who is Miller?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Why would I forgot a friend?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It's my handwriting.\",\"italic\":false,\"color\":\"red\"}]']}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"I'm not sure I can take\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"this anymore.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I know why we're doing it.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I know.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We need to explore this other\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"world, to save the people,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"to help our friends, our\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"family, our homeland.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I just think things have gone\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"too far.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"They've given up on all of us.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Is this worth the cost?\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         },
@@ -537,29 +667,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"To my people, rejoice.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"We have secured our victory over life and death.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Starvation, suffering, pain.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"We defeated it all.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"We will be the first to never die.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Attend the royal banquet at the castle, in one week\\'s time.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"You are all invited, citizens of my kingdom.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Defenders of my castle.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"I thank you for taking this step with me.\",\"italic\":false,\"color\":\"white\"}]']}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:paper",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"We made a breakthrough.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Our subject grew.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"We need a bigger cell.\",\"italic\":false,\"color\":\"white\"}]']}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:paper",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"text\":\"Lost Letter\",\"italic\":true,\"bold\":true,\"color\":\"white\"}]',Lore:['[{\"text\":\"The world\\'s stranger than I thought.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Stranger than any of us thought.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Dwarves, elves... We knew that.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"But angels?\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"They have flying cities. Sky cities.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Cloud empires.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"A trader was telling me all about it.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Said they had been to one.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Had minerals I had never seen before.\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Found a... flying ship?\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"We have to look into this.\",\"italic\":false,\"color\":\"white\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"Everyone's changing.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Discoloured skin,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"gravelly voices, red eyes.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I think it's the prisoner.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I think they're doing this.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I'm the only one okay.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Why?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Why me?\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         }

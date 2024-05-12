@@ -1,0 +1,15 @@
+{
+  "name": "overhauledstructures:overhauleddungeonprison/ovdp_core_corner",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "overhauledstructures:ovdp/ovdp_core_corner_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

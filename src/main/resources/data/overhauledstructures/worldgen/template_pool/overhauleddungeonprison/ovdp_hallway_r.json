@@ -1,124 +1,95 @@
 {
-  "name": "overhauledstructures:overhauleddungeonbasic/ovds_feature",
+  "name": "overhauledstructures:overhauleddungeonprison/ovdp_hallway_r",
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 6,
+      "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovds/ovds_feature_1",
+        "location": "overhauledstructures:ovdp/ovdp_hallway_r_1",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 6,
+      "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovds/ovds_feature_2",
+        "location": "overhauledstructures:ovdp/ovdp_hallway_r_2",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 6,
+      "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovds/ovds_feature_3",
+        "location": "overhauledstructures:ovdp/ovdp_hallway_r_3",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 6,
+      "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovds/ovds_feature_4",
+        "location": "overhauledstructures:ovdp/ovdp_hallway_r_4",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 6,
+      "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovds/ovds_feature_5",
+        "location": "overhauledstructures:ovdp/ovdp_hallway_r_5",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 6,
+      "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovds/ovds_feature_6",
+        "location": "overhauledstructures:ovdp/ovdp_hallway_r_6",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 6,
+      "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovds/ovds_feature_7",
+        "location": "overhauledstructures:ovdp/ovdp_hallway_r_7",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 2,
+      "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovds/ovds_feature_8",
+        "location": "overhauledstructures:ovdp/ovdp_hallway_r_8",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 2,
+      "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovds/ovds_feature_9",
+        "location": "overhauledstructures:ovdp/ovdp_hallway_r_9",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 2,
+      "weight": 5,
       "element": {
-        "location": "overhauledstructures:ovds/ovds_feature_10",
+        "location": "overhauledstructures:ovdp/ovdp_hallway_r_10",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 2,
-      "element": {
-        "location": "overhauledstructures:ovds/ovds_feature_11",
-        "processors": "minecraft:empty",
-        "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 2,
-      "element": {
-        "location": "overhauledstructures:ovds/ovds_feature_12",
-        "processors": "minecraft:empty",
-        "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 2,
-      "element": {
-        "location": "overhauledstructures:ovds/ovds_feature_13",
-        "processors": "minecraft:empty",
-        "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
-      }
-    }
       }
     }
   ]

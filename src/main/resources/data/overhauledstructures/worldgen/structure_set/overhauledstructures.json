@@ -9,11 +9,7 @@
       "weight": 1
     },
     {
-      "structure": "overhauledstructures:overhauledcitiesmedieval",
-      "weight": 1
-    },
-    {
-      "structure": "overhauledstructures:overhauledcitiesmedievaltavern",
+      "structure": "overhauledstructures:overhauleddungeonprison",
       "weight": 1
     }
   ],
