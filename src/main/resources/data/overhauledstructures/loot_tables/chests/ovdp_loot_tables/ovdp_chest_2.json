@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 2,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -66,7 +66,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 2,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -116,7 +116,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 5,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -201,7 +201,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 5,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -346,7 +346,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 8,
+          "weight": 4,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -387,7 +387,7 @@
         {
           "type": "minecraft:item",
           "weight": 2,
-          "name": "minecraft:gold_axe",
+          "name": "minecraft:golden_axe",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -595,7 +595,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomPotionColor:6904214,CustomPotionEffects:[{Id:16,Duration:24000,Amplifier:2},{Id:7,Duration:2,Amplifier:2}],display:{Name:'[\"\",{\"text\":\"Warden's Truth\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"Breweries of sentries,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"sourced from life itself.\",\"italic\":false,\"color\":\"red\"}]']}}"
+              "tag": "{CustomPotionColor:6904214,CustomPotionEffects:[{Id:16,Duration:24000,Amplifier:2},{Id:7,Duration:2,Amplifier:2}],display:{Name:'[\"\",{\"text\":\"Warden\\'s Truth\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"Breweries of sentries,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"sourced from life itself.\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         }
@@ -609,7 +609,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 5,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -634,7 +634,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"The new prisoner is different.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The rest were fragile.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Short-lasting.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"This one holds a resilience-\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"No, a sentience, even.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"A mind of its own.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The others seem to obey it.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It's like they follow it.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We are considering using this.\",\"italic\":false,\"color\":\"red\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry\\'s Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"The new prisoner is different.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The rest were fragile.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Short-lasting.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"This one holds a resilience-\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"No, a sentience, even.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"A mind of its own.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The others seem to obey it.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It\\'s like they follow it.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We are considering using this.\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         },
@@ -645,7 +645,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"Do you remember Miller?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I don't.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I checked an old entry.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It mentioned a sentry here.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Miller.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Did something happen to them?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It said I was their friend.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Am I losing it?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Who is Miller?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Why would I forgot a friend?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It's my handwriting.\",\"italic\":false,\"color\":\"red\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry\\'s Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"Do you remember Miller?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I don\\'t.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I checked an old entry.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It mentioned a sentry here.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Miller.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Did something happen to them?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It said I was their friend.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Am I losing it?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Who is Miller?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Why would I forget a friend?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It\\'s my handwriting.\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         },
@@ -656,7 +656,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"I'm not sure I can take\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"this anymore.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I know why we're doing it.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I know.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We need to explore this other\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"world, to save the people,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"to help our friends, our\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"family, our homeland.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I just think things have gone\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"too far.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"They've given up on all of us.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Is this worth the cost?\",\"italic\":false,\"color\":\"red\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry\\'s Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"I\\'m not sure I can take\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"this anymore.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I know why we\\'re doing it.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I know.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We need to explore this other\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"world, to save the people,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"to help our friends, our\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"family, our homeland.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I just think things have gone\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"too far.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"They\\'ve given up on all of us.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Is this worth the cost?\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         },
@@ -667,7 +667,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"Everyone's changing.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Discoloured skin,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"gravelly voices, red eyes.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I think it's the prisoner.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I think they're doing this.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I'm the only one okay.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Why?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Why me?\",\"italic\":false,\"color\":\"red\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry\\'s Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"Everyone\\'s changing.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Discoloured skin,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"gravelly voices, red eyes.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I think it\\'s the prisoner.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I think they\\'re doing this.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I\\'m the only one okay.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Why?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Why me?\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         }

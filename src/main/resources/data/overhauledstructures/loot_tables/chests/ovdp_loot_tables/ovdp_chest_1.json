@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 2,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -96,7 +96,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 5,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -181,7 +181,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 5,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -286,7 +286,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 8,
+          "weight": 4,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -564,7 +564,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 5,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -589,7 +589,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"We captured another one.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The portal was worth it.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Each prisoner has offered\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"extensive information.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Experiments are yielding results.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We will have our answer soon.\",\"italic\":false,\"color\":\"red\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry\\'s Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"We captured another one.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The portal was worth it.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Each prisoner has offered\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"extensive information.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Experiments are yielding results.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We will have our answer soon.\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         },
@@ -600,7 +600,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"More supplies from the surface.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We got cake. Finally.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Something good.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"For once.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It's Josephine's birthday.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Samuel is struggling.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Red eyes, skin... tearing.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We saw bone, yesterday.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Healing can only do so much.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"What a rotten birthday.\",\"italic\":false,\"color\":\"red\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry\\'s Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"More supplies from the surface.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We got cake. Finally.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Something good.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"For once.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It\\'s Josephine\\'s birthday.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Samuel is struggling.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Red eyes, skin... tearing.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We saw bone, yesterday.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Healing can only do so much.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"What a rotten birthday.\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         },
@@ -611,7 +611,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"I miss my family.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I miss the sky.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The sun, the grass, the flowers.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We had to shut this place\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"into lockdown.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Total isolation.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"No surface access ever again.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Is it a week, now? Two?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It might be longer.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We have clocks, but who\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"can trust a piece of metal?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Junk items don't know\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"what they're talking about.\",\"italic\":false,\"color\":\"red\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry\\'s Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"I miss my family.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I miss the sky.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The sun, the grass, the flowers.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We had to shut this place\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"into lockdown.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Total isolation.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"No surface access ever again.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Is it a week, now? Two?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"It might be longer.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We have clocks, but who\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"can trust a piece of metal?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Junk items don\\'t know\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"what they\\'re talking about.\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         },
@@ -622,7 +622,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"I might not last longer.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The barricade is giving in.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Those deathly creatures,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"more powerful than skeletons.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"So similar, so different.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Do not let them near you.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Do not let them see you.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Do not let them find you.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"When you read this, blow this up.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Destroy this facility.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We cannot let those escape.\",\"italic\":false,\"color\":\"red\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry\\'s Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"I might not last longer.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The barricade is giving in.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Those deathly creatures,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"more powerful than skeletons.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"So similar, so different.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Do not let them near you.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Do not let them see you.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Do not let them find you.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"When you read this, blow this up.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Destroy this facility.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"We cannot let those escape.\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         }

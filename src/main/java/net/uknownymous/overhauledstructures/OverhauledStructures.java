@@ -1,8 +1,8 @@
 package net.uknownymous.overhauledstructures;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.Minecraft;
-import net.minecraft.world.level.block.Blocks;
+//    import net.minecraft.client.Minecraft;
+//    import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -12,7 +12,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
+//    import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -52,7 +52,7 @@ public class OverhauledStructures
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         // Some common setup code
-        // LOGGER.info("HELLO FROM COMMON SETUP");
+         LOGGER.info("Epic!");
         // LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
     }
 
@@ -61,7 +61,7 @@ public class OverhauledStructures
     public void onServerStarting(ServerStartingEvent event)
     {
         // Do something when the server starts
-        LOGGER.info("Hey! Overhauled Structures is currently active. Thanks for using it. :)");
+        LOGGER.info("Hey! Epic Dungeons is currently active. Thanks for using it. :)");
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -72,7 +72,7 @@ public class OverhauledStructures
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             // Some client setup code
-           // LOGGER.info("HELLO FROM CLIENT SETUP");
+            LOGGER.info("Hey!");
            // LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
     }

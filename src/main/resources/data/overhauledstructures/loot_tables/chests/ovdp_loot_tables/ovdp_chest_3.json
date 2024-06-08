@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 2,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -116,7 +116,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 5,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -201,7 +201,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 5,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -288,7 +288,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 8,
+          "weight": 4,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -628,7 +628,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 5,
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -653,7 +653,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[\"\",{\"text\":\"Prisoner's Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"funny\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"they think strong\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"never\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"i am power\",\"italic\":false,\"color\":\"red\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Prisoner\\'s Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"funny\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"they think strong\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"never\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"i am power\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         },
@@ -664,7 +664,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"Hey, sweetie.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I'm thinking of you.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Hope you and your dad are\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"okay up there.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I'll be back soon, okay?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I know you won't see this.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I just miss you, okay?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Wait for me.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I love you.\",\"italic\":false,\"color\":\"red\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry\\'s Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"Hey, sweetie.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I\\'m thinking of you.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Hope you and your dad are\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"okay up there.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I\\'ll be back soon, okay?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I know you won\\'t see this.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I just miss you, okay?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Wait for me.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I love you.\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         },
@@ -675,7 +675,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry's Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"First day on duty,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"This musty place is disgusting!\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I've been sneezning non-stop.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"How is it so dusty?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Does anyone bother cleaning?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I've offered to help out.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Clean up a bit in my spare\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"time, tidy stuff up, make\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"it look presentable.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Sure, I get it, it's a prison.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Experiments and such, nothing\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"fancy, nothing pretty.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Would it kill anyone to be\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"happy though?\",\"italic\":false,\"color\":\"red\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sentry\\'s Diary\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"First day on duty,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"This musty place is disgusting!\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I\\'ve been sneezning non-stop.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"How is it so dusty?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Does anyone bother cleaning?\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"I\\'ve offered to help out.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Clean up a bit in my spare\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"time, tidy stuff up, make\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"it look presentable.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Sure, I get it, it\\'s a prison.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Experiments and such, nothing\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"fancy, nothing pretty.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Would it kill anyone to be\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"happy though?\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         },
@@ -686,7 +686,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[\"\",{\"text\":\"Prisoner's Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"We recovered the lord.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Our invasion commences.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"These mortals provide us\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"knowledge, resources,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"a fortress.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Prepare our scourge.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The world is ours.\",\"italic\":false,\"color\":\"red\"}]']}}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Prisoner\\'s Note\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[\"\",{\"text\":\"We recovered the lord.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Our invasion commences.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"These mortals provide us\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"knowledge, resources,\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"a fortress.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"Prepare our scourge.\",\"italic\":false,\"color\":\"red\"}]','[\"\",{\"text\":\"The world is ours.\",\"italic\":false,\"color\":\"red\"}]']}}"
             }
           ]
         }
