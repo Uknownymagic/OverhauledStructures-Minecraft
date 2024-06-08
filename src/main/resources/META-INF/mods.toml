@@ -27,7 +27,7 @@ displayName="Epic Dungeons" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="overhauledstructures.png" #optional
+logoFile="META-INF/overhauledstructures.png" #optional
 # A text field displayed in the mod UI
 credits="This mod would not have been possible to the efficient quality it has been without the excellent supportive tutorials offered by Modding by Kaupenjoe: https://www.youtube.com/@ModdingByKaupenjoe" #optional
 # A text field displayed in the mod UI
